@@ -17,7 +17,6 @@ build:
 
 requirements:
   build:
-    - toolchain
     - cmake >=3.2
     - aws-sdk-cpp 1.4.*
     - zlib 1.2.11
@@ -50,9 +49,9 @@ about:
   license_file: LICENSE
   summary: 'TileDB sparse and dense multi-dimensional array data management'
   description: |
-    TileDB is an efficient multi-dimensional array management system which introduces 
-    a novel on-disk format that can effectively store dense and sparse array data with 
-    support for fast updates and reads. It features excellent compression, and an efficient 
+    TileDB is an efficient multi-dimensional array management system which introduces
+    a novel on-disk format that can effectively store dense and sparse array data with
+    support for fast updates and reads. It features excellent compression, and an efficient
     parallel I/O system with high scalability.
   doc_url: http://docs.tiledb.io
   dev_url: https://github.com/TileDB-Inc/TileDB
