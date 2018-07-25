@@ -12,13 +12,16 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
-  skip: True  # [osx or win]
+  number: 1
+  skip: True  # [win]
 
 requirements:
   build:
-    - toolchain
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
     - cmake >=3.2
+    - pkg-config  # [not win]
+  host:
     - aws-sdk-cpp 1.4.*
     - zlib
     - bzip2
@@ -39,7 +42,8 @@ test:
   commands:
     - test -e $PREFIX/include/tiledb/tiledb.h  # [unix]
     - test -e $PREFIX/include/tiledb/tiledb  # [unix]
-    - test -e $PREFIX/lib$ARCH/libtiledb$SHLIB_EXT  # [unix]
+    - test -e $PREFIX/lib$ARCH/libtiledb$SHLIB_EXT  # [linux]
+    - test -e $PREFIX/lib/libtiledb$SHLIB_EXT  # [osx]
     - conda inspect linkages -p $PREFIX $PKG_NAME  # [not win]
     - conda inspect objects -p $PREFIX $PKG_NAME  # [osx]
 
