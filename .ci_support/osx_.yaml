@@ -2,6 +2,10 @@ MACOSX_DEPLOYMENT_TARGET:
 - '10.9'
 bzip2:
 - '1'
+c_compiler:
+- toolchain_c
+cxx_compiler:
+- toolchain_cxx
 lz4_c:
 - 1.8.1
 macos_machine:
