@@ -1,5 +1,11 @@
 bzip2:
 - '1'
+channel_sources:
+- conda-forge,defaults
+channel_targets:
+- conda-forge main
+cxx_compiler:
+- vs2015
 lz4_c:
 - 1.8.1
 pin_run_as_build:
@@ -7,10 +13,17 @@ pin_run_as_build:
     max_pin: x
   lz4-c:
     max_pin: x.x.x
+  vc:
+    max_pin: x
   zlib:
     max_pin: x.x
   zstd:
     max_pin: x.x.x
+vc:
+- '14'
+zip_keys:
+- - vc
+  - cxx_compiler
 zlib:
 - '1.2'
 zstd:
