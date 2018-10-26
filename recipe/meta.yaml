@@ -15,8 +15,7 @@ build:
   number: 0
   skip: True  # [win32]
   skip: True  # [win and vc<14]
-  {% if 'toolchain' in compiler('cxx') %}skip: True{% endif %}  # Only build with modern compilers.
-  features: # [win]
+  features:  # [win]
     - vc14  # [win]
 
 requirements:
@@ -44,7 +43,7 @@ test:
    
     - test -e $PREFIX/include/tiledb/tiledb.h  # [unix]
     - test -e $PREFIX/include/tiledb/tiledb  # [unix]
-    - test -e $PREFIX/lib$ARCH/libtiledb$SHLIB_EXT  # [linux]
+    - test -e $PREFIX/lib/libtiledb$SHLIB_EXT  # [linux]
     - test -e $PREFIX/lib/libtiledb$SHLIB_EXT  # [osx]
 
     - if exist %LIBRARY_INC%\\tiledb\\tiledb (exit 0) else (exit 1)  # [win]
@@ -72,4 +71,3 @@ extra:
     - stavrospapadopoulos
     - jakebolewski
     - tdenniston
-
