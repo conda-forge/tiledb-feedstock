@@ -1,6 +1,6 @@
 {% set name = "TileDB" %}
-{% set version = "1.4.1" %}
-{% set sha256 = "a278ebef1acc6e329eb9816502dda6b3c8b35c4853745a222111626c251b2845" %}
+{% set version = "1.4.2" %}
+{% set sha256 = "10ac55dd764470884f642de817fc70c271006d53fdc404ed862079425eb66ebe" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1000
+  number: 0
   skip: True  # [win32]
   skip: True  # [win and vc<14]
   features:  # [win]

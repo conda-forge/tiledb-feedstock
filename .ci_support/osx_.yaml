@@ -1,5 +1,5 @@
-build_number_decrement:
-- '1000'
+MACOSX_DEPLOYMENT_TARGET:
+- '10.9'
 bzip2:
 - '1'
 channel_sources:
@@ -7,11 +7,13 @@ channel_sources:
 channel_targets:
 - conda-forge main
 cxx_compiler:
-- toolchain_cxx
-docker_image:
-- condaforge/linux-anvil
+- clangxx
 lz4_c:
 - 1.8.1
+macos_machine:
+- x86_64-apple-darwin13.4.0
+macos_min_version:
+- '10.9'
 pin_run_as_build:
   bzip2:
     max_pin: x
@@ -21,12 +23,6 @@ pin_run_as_build:
     max_pin: x.x
   zstd:
     max_pin: x.x.x
-zip_keys:
-- - cxx_compiler
-  - channel_sources
-  - channel_targets
-  - docker_image
-  - build_number_decrement
 zlib:
 - '1.2'
 zstd:
