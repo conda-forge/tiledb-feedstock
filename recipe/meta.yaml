@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 2
   skip: True  # [win32]
   skip: True  # [win and vc<14]
   features:  # [win]
@@ -35,6 +35,7 @@ requirements:
     - zstd
     - lz4-c
     - tbb 2018.0.5
+    - curl
 
 test:
   commands:
