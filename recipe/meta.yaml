@@ -14,7 +14,7 @@ source:
   #git_rev: dev
 
 build:
-  number: 0
+  number: 1
   skip: True  # [win32]
   skip: True  # [win and vc<14]
   features:  # [win]
@@ -40,8 +40,8 @@ requirements:
     - curl
 
 test:
-  downstreams:
-    - tiledb-py
+  #  downstreams:
+  #  - tiledb-py
   commands:
     - conda inspect linkages -p $PREFIX $PKG_NAME  # [not win]
     - conda inspect objects -p $PREFIX $PKG_NAME  # [osx]
