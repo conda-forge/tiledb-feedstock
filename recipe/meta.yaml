@@ -1,24 +1,19 @@
-{% set name = "TileDB" %}
 {% set version = "1.6.2" %}
-{% set sha256 = "001e49f4a9408f0e9064628ddcde201a5f76cf7a87c5bb17799c45e648001393" %}
 
 package:
-  name: {{ name|lower }}
+  name: tiledb
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://github.com/TileDB-Inc/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: {{ sha256 }}
-  #git_url: https://github.com/TileDB-Inc/TileDB
-  #git_rev: dev
+  url: https://github.com/TileDB-Inc/TileDB/archive/{{ version }}.tar.gz
+  sha256: 001e49f4a9408f0e9064628ddcde201a5f76cf7a87c5bb17799c45e648001393
 
 build:
-  number: 0
-  skip: True  # [win32]
+  number: 1
+  run_exports:
+    # no ABI info but the so breaks in minor releases
+    - {{ pin_subpackage('tiledb') }}
   skip: True  # [win and vc<14]
-  features:  # [win]
-    - vc14  # [win]
 
 requirements:
   build:
@@ -43,11 +38,8 @@ test:
   #  downstreams:
   #  - tiledb-py
   commands:
-    - conda inspect linkages -p $PREFIX $PKG_NAME  # [not win]
-    - conda inspect objects -p $PREFIX $PKG_NAME  # [osx]
-   
-    - test -e $PREFIX/include/tiledb/tiledb.h  # [unix]
-    - test -e $PREFIX/include/tiledb/tiledb  # [unix]
+    - test -e $PREFIX/include/tiledb/tiledb.h  # [not win]
+    - test -e $PREFIX/include/tiledb/tiledb  # [not win]
     - test -e $PREFIX/lib/libtiledb$SHLIB_EXT  # [linux]
     - test -e $PREFIX/lib/libtiledb$SHLIB_EXT  # [osx]
 
