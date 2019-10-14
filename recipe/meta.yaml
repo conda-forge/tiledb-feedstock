@@ -14,7 +14,7 @@ source:
     - 0001-Conda-only-patch-capnproto-build-to-work-with-anacon.patch
 
 build:
-  number: 0
+  number: 1
   run_exports:
     # no ABI info but the so breaks in minor releases
     - {{ pin_subpackage('tiledb') }}
