@@ -9,7 +9,7 @@ channel_targets:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '4'
+- '9'
 lz4_c:
 - 1.8.3
 macos_machine:
@@ -28,4 +28,4 @@ pin_run_as_build:
 zlib:
 - '1.2'
 zstd:
-- 1.4.0
+- 1.4.3
