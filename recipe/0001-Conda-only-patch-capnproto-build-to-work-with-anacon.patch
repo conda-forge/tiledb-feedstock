@@ -1,25 +1,24 @@
-From 0a2aa19e1c407b236ec3bd4371cbd08f9b01a2b1 Mon Sep 17 00:00:00 2001
+From b455138a72b55e72d3a1f32f97439b5568f9736f Mon Sep 17 00:00:00 2001
 From: Isaiah Norton <isaiah@tiledb.io>
-Date: Fri, 4 Oct 2019 16:01:23 -0400
+Date: Tue, 12 Nov 2019 16:14:25 -0500
 Subject: [PATCH] Conda-only: patch capnproto build to work with anaconda
- compilers
 
 ---
  cmake/Modules/FindCapnp_EP.cmake | 1 +
  1 file changed, 1 insertion(+)
 
 diff --git a/cmake/Modules/FindCapnp_EP.cmake b/cmake/Modules/FindCapnp_EP.cmake
-index 8ca2c394..4045ddec 100644
+index c870d4ce..61b19b38 100644
 --- a/cmake/Modules/FindCapnp_EP.cmake
 +++ b/cmake/Modules/FindCapnp_EP.cmake
-@@ -75,6 +75,7 @@ if (NOT CAPNP_FOUND)
+@@ -99,6 +99,7 @@ if (NOT CAPNP_FOUND)
            -DBUILD_TESTING=OFF
            "-DCMAKE_C_FLAGS=${CFLAGS_DEF}"
            "-DCMAKE_CXX_FLAGS=${CXXFLAGS_DEF}"
 +          -DCMAKE_CXX_COMPILE_FEATURES=cxx_constexpr
            ${TILEDB_EP_BASE}/src/ep_capnp/c++
-       PATCH_COMMAND
-         ${GIT_EXECUTABLE} cherry-pick fdbf035619
+         UPDATE_COMMAND ""
+         LOG_DOWNLOAD TRUE
 -- 
 2.20.1
 
