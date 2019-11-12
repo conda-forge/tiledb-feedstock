@@ -1,6 +1,11 @@
 #!/bin/sh
 set -exo pipefail
 
+if [[ $target_platform =~ osx.* ]]; then
+  CURL_LIBS_APPEND=`curl-config --libs`
+  export LDFLAGS="${LDFLAGS} ${CURL_LIBS_APPEND}"
+fi
+
 mkdir build && cd build
 cmake \
   -DCMAKE_INSTALL_PREFIX="${PREFIX}" \
