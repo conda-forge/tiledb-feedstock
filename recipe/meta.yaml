@@ -12,9 +12,10 @@ source:
   sha256: {{ sha256 }}
   patches:
     - 0001-Conda-only-patch-capnproto-build-to-work-with-anacon.patch
+    - 0002-fix-tiledb-curl.patch # remove in 1.7.1
 
 build:
-  number: 0
+  number: 1
   run_exports:
     # no ABI info but the so breaks in minor releases
     - {{ pin_subpackage('tiledb') }}
