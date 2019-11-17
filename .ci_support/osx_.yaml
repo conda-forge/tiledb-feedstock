@@ -28,4 +28,4 @@ pin_run_as_build:
 zlib:
 - '1.2'
 zstd:
-- 1.4.3
+- 1.4.4
