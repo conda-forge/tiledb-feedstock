@@ -9,7 +9,7 @@ source:
   sha256: 001e49f4a9408f0e9064628ddcde201a5f76cf7a87c5bb17799c45e648001393
 
 build:
-  number: 2
+  number: 3
   run_exports:
     # no ABI info but the so breaks in minor releases
     - {{ pin_subpackage('tiledb') }}
