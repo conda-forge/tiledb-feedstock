@@ -1,6 +1,6 @@
 {% set name = "TileDB" %}
-{% set version = "1.7.0" %}
-{% set sha256 = "bf8a689dd485c0f13b4173fe1f1a573230af2dc3c329329846becab22af48e10" %}
+{% set version = "1.7.1" %}
+{% set sha256 = "8cc6a178746f024791f9c2624b9b5627c4f2fad72ca0b8023877557a71d151b6" %}
 
 package:
   name: tiledb
@@ -15,7 +15,7 @@ source:
     - 0002-fix-tiledb-curl.patch # remove in 1.7.1
 
 build:
-  number: 2
+  number: 0
   run_exports:
     # no ABI info but the so breaks in minor releases
     - {{ pin_subpackage('tiledb') }}
