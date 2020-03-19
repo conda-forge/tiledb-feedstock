@@ -1,6 +1,6 @@
 {% set name = "TileDB" %}
-{% set version = "1.7.5" %}
-{% set sha256 = "84d7d33454809ef76b1b41592fb602d64d568a6fbb78da1d381116d98a568cdc" %}
+{% set version = "1.7.6" %}
+{% set sha256 = "b624abd54374fbf2ac110e1db44f2d35607fc10745fd42daaac38884b8bc8f18" %}
 
 package:
   name: tiledb
@@ -18,7 +18,7 @@ build:
   run_exports:
     # no ABI info but the so breaks in minor releases
     - {{ pin_subpackage('tiledb') }}
-  skip: True  # [win and vc<14]
+  skip: true  # [win and vc<14]
 
 requirements:
   build:
@@ -59,7 +59,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'TileDB sparse and dense multi-dimensional array data management'
+  summary: TileDB sparse and dense multi-dimensional array data management
   description: |
     TileDB is an efficient multi-dimensional array management system which introduces
     a novel on-disk format that can effectively store dense and sparse array data with
