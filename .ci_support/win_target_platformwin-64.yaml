@@ -23,9 +23,6 @@ target_platform:
 - win-64
 vc:
 - '14'
-zip_keys:
-- - vc
-  - cxx_compiler
 zlib:
 - '1.2'
 zstd:
