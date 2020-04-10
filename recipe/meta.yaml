@@ -16,7 +16,7 @@ source:
 build:
   number: 1
   run_exports:
-    # no ABI info but the so breaks in minor releases
+    # https://abi-laboratory.pro/?view=timeline&l=tiledb
     - {{ pin_subpackage('tiledb', 'x.x') }}
   skip: true  # [win and vc<14]
 
