@@ -17,7 +17,7 @@ build:
   number: 1
   run_exports:
     # no ABI info but the so breaks in minor releases
-    - {{ pin_subpackage('tiledb') }}
+    - {{ pin_subpackage('tiledb', 'x.x') }}
   skip: true  # [win and vc<14]
 
 requirements:
