@@ -10,6 +10,7 @@ cmake -G "NMake Makefiles" ^
       -DTILEDB_TBB_SHARED=ON ^
       -DTILEDB_S3=ON ^
       -DTILEDB_HDFS=OFF ^
+      -DTILEDB_AZURE=ON ^
       ..
 if errorlevel 1 exit 1
 
