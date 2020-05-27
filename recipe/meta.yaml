@@ -15,7 +15,7 @@ source:
     - 0002-fix-tiledb-curl.patch # remove in 1.7.1
 
 build:
-  number: 3
+  number: 4
   run_exports:
     # no ABI info but the so breaks in minor releases
     - {{ pin_subpackage('tiledb') }}
@@ -37,6 +37,9 @@ requirements:
     - bzip2
     - zstd
     - lz4-c
+    # Only tbb >=2019 has a correct run_exports
+    # See https://abi-laboratory.pro/index.php?view=timeline&l=tbb
+    - tbb >=2018.0.5
     - curl
 
 test:
