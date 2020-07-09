@@ -5,7 +5,7 @@ Home: http://tiledb.io
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: TileDB sparse and dense multi-dimensional array data management
 
