@@ -18,6 +18,7 @@ cmake \
   -DTILEDB_S3=ON \
   -DTILEDB_SERIALIZATION=ON \
   -DTILEDB_LOG_OUTPUT_ON_FAILURE=ON \
+  -DTILEDB_AZURE=ON \
   ..
 make -j ${CPU_COUNT}
 make -C tiledb install
