@@ -9,6 +9,7 @@ cmake -G "NMake Makefiles" ^
       -DTILEDB_WERROR=OFF ^
       -DTILEDB_TBB_SHARED=ON ^
       -DTILEDB_S3=ON ^
+      -DTILEDB_AZURE=ON ^
       -DTILEDB_HDFS=OFF ^
       ..
 if errorlevel 1 exit 1
