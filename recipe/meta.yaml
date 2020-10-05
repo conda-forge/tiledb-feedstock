@@ -1,6 +1,6 @@
 {% set name = "TileDB" %}
-{% set version = "2.0.8" %}
-{% set sha256 = "827a38b5c676a6cf6db716885f9c9b026e5f02109ce0e30f7145182da1e9fa23" %}
+{% set version = "2.1.0" %}
+{% set sha256 = "0065e6bf4581a06d6f61b3dd5b438a8cb6985b725a604768a5c57bf0e9e79c2e" %}
 
 package:
   name: tiledb
@@ -14,7 +14,7 @@ source:
     - 0001-Conda-only-patch-capnproto-build-to-work-with-anacon.patch
 
 build:
-  number: 1
+  number: 0
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=tiledb
     - {{ pin_subpackage('tiledb', 'x.x') }}
