@@ -5,9 +5,13 @@ Home: http://tiledb.io
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tiledb-feedstock/blob/master/LICENSE.txt)
 
 Summary: TileDB sparse and dense multi-dimensional array data management
+
+Development: https://github.com/TileDB-Inc/TileDB
+
+Documentation: http://docs.tiledb.io
 
 TileDB is an efficient multi-dimensional array management system which introduces
 a novel on-disk format that can effectively store dense and sparse array data with
