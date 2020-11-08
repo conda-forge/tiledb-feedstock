@@ -1,20 +1,18 @@
 {% set name = "TileDB" %}
 {% set version = "2.1.2" %}
-{% set sha256 = "bc19281ef4a4629c3ca4d69007c0296ebcfd02579fed424de3b7d38391a848a8" %}
 
 package:
   name: tiledb
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/TileDB-Inc/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: bc19281ef4a4629c3ca4d69007c0296ebcfd02579fed424de3b7d38391a848a8
   patches:
     - 0001-Conda-only-patch-capnproto-build-to-work-with-anacon.patch
 
 build:
-  number: 0
+  number: 1
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=tiledb
     - {{ pin_subpackage('tiledb', 'x.x') }}
@@ -36,8 +34,6 @@ requirements:
     - zstd
     - lz4-c
     - curl
-  run_constrained:
-    - __osx >={{ MACOSX_DEPLOYMENT_TARGET|default("10.9") }}  # [osx and x86_64]
 
 test:
   #  downstreams:
@@ -45,8 +41,7 @@ test:
   commands:
     - test -e $PREFIX/include/tiledb/tiledb.h  # [not win]
     - test -e $PREFIX/include/tiledb/tiledb  # [not win]
-    - test -e $PREFIX/lib/libtiledb$SHLIB_EXT  # [linux]
-    - test -e $PREFIX/lib/libtiledb$SHLIB_EXT  # [osx]
+    - test -e $PREFIX/lib/libtiledb$SHLIB_EXT  # [not win]
 
     - if exist %LIBRARY_INC%\\tiledb\\tiledb (exit 0) else (exit 1)  # [win]
     - if exist %LIBRARY_INC%\\tiledb\\tiledb.h (exit 0) else (exit 1)  # [win]
