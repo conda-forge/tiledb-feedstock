@@ -1,6 +1,12 @@
 #!/bin/sh
 set -exo pipefail
 
+# Use CC/CXX wrappers to disable -Werror
+export NN_CXX_ORIG=$CXX
+export NN_CC_ORIG=$CC
+export CXX=$RECIPE_DIR/cxx_wrap.sh
+export CC=$RECIPE_DIR/cc_wrap.sh
+
 if [[ $target_platform =~ osx.* ]]; then
   CURL_LIBS_APPEND=`curl-config --libs`
   export LDFLAGS="${LDFLAGS} ${CURL_LIBS_APPEND}"
