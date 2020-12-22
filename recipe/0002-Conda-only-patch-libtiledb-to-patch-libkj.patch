@@ -1,0 +1,28 @@
+diff --git a/cmake/Modules/FindCapnp_EP.cmake b/cmake/Modules/FindCapnp_EP.cmake
+index 440d4053..79c83549 100644
+--- a/cmake/Modules/FindCapnp_EP.cmake
++++ b/cmake/Modules/FindCapnp_EP.cmake
+@@ -141,6 +141,8 @@ if (NOT CAPNP_FOUND)
+         LOG_OUTPUT_ON_FAILURE ${TILEDB_LOG_OUTPUT_ON_FAILURE}
+       )
+     else()
++      find_package(Git REQUIRED)
++
+       ExternalProject_Add(ep_capnp
+         PREFIX "externals"
+         URL "https://github.com/capnproto/capnproto/archive/v0.6.1.tar.gz"
+@@ -155,10 +157,13 @@ if (NOT CAPNP_FOUND)
+           "-DCMAKE_CXX_FLAGS=${CXXFLAGS_DEF}"
+           ${TILEDB_EP_BASE}/src/ep_capnp/c++
+         UPDATE_COMMAND ""
++        PATCH_COMMAND
++          ${GIT_EXECUTABLE} apply $ENV{RECIPE_DIR}/0002-Conda-only-patch-libkj-invokable-const.patch
+         LOG_DOWNLOAD TRUE
+         LOG_CONFIGURE TRUE
+         LOG_BUILD TRUE
+         LOG_INSTALL TRUE
++        LOG_PATCH TRUE
+         LOG_OUTPUT_ON_FAILURE ${TILEDB_LOG_OUTPUT_ON_FAILURE}
+       )
+     endif()
+

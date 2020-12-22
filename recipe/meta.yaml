@@ -10,6 +10,7 @@ source:
   sha256: b7ce56d305482065ef688ef7cbfb28d5e4299a06c3c69bba9f97ee3fc444953e
   patches:
     - 0001-Conda-only-patch-capnproto-build-to-work-with-anacon.patch
+    - 0002-Conda-only-patch-libtiledb-to-patch-libkj.patch
 
 build:
   number: 0
@@ -22,6 +23,7 @@ requirements:
   build:
     - cmake
     - pkg-config  # [not win]
+    - git  # [not win]
     - {{ compiler('cxx') }}
   host:
     - zlib
