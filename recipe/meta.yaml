@@ -10,7 +10,6 @@ source:
   sha256: f4b1d9ed0092a3eaac2c8fd48f99b1b33c564e28a7c4e6f4e96f345212be0e7e
   patches:
     - 0001-Conda-only-patch-capnproto-build-to-work-with-anacon.patch
-    - 0002-libkj-gcc93.patch
 
 build:
   number: 0
