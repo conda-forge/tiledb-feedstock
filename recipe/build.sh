@@ -13,7 +13,7 @@ if [[ $target_platform =~ osx.* ]]; then
 fi
 
 mkdir build && cd build
-cmake \
+cmake ${CMAKE_ARGS} \
   -DCMAKE_INSTALL_PREFIX="${PREFIX}" \
   -DCMAKE_BUILD_TYPE=Release \
   -DTILEDB_WERROR=OFF \
