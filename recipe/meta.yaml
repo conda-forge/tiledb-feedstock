@@ -28,6 +28,7 @@ requirements:
     - bzip2
     - zstd
     - lz4-c
+    - curl
   run:
     - zlib
     - bzip2
