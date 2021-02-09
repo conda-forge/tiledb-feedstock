@@ -8,7 +8,7 @@ export CXX=$RECIPE_DIR/cxx_wrap.sh
 export CC=$RECIPE_DIR/cc_wrap.sh
 
 if [[ $target_platform =~ osx.* ]]; then
-  CURL_LIBS_APPEND=`curl-config --libs`
+  CURL_LIBS_APPEND=`$PREFIX/bin/curl-config --libs`
   export LDFLAGS="${LDFLAGS} ${CURL_LIBS_APPEND}"
 fi
 
