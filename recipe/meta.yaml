@@ -20,6 +20,7 @@ build:
 
 requirements:
   build:
+    - make  # [unix]
     - cmake
     - pkg-config  # [not win]
     - {{ compiler('cxx') }}
