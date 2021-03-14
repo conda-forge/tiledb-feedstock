@@ -10,8 +10,6 @@ channel_sources:
 - conda-forge
 channel_targets:
 - conda-forge main
-curl:
-- '7'
 cxx_compiler:
 - gxx
 cxx_compiler_version:
@@ -22,8 +20,6 @@ lz4_c:
 - 1.9.3
 pin_run_as_build:
   bzip2:
-    max_pin: x
-  curl:
     max_pin: x
   lz4-c:
     max_pin: x.x.x
