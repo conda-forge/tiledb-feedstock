@@ -12,6 +12,10 @@ if [[ $target_platform =~ osx-arm64 ]]; then
   export LDFLAGS="${LDFLAGS} ${CURL_LIBS_APPEND}"
 fi
 
+if [[ $target_platform  == linux-64 ]]; then
+  export LDFLAGS="${LDFLAGS} -Wl,--no-as-needed -lrt"
+fi
+
 mkdir build && cd build
 cmake ${CMAKE_ARGS} \
   -DCMAKE_INSTALL_PREFIX="${PREFIX}" \
