@@ -8,8 +8,6 @@ package:
 source:
   url: https://github.com/TileDB-Inc/{{ name }}/archive/{{ version }}.tar.gz
   sha256: d465e5606437c2cb507d8225877b8b4daf41308fd129c4aa00cb83131acc4343
-  patches:
-    - 0001-Conda-only-patch-capnproto-build-to-work-with-anacon.patch
 
 build:
   number: 0
