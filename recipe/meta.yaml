@@ -1,5 +1,5 @@
 {% set name = "TileDB" %}
-{% set version = "2.2.7" %}
+{% set version = "2.2.8" %}
 
 package:
   name: tiledb
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/TileDB-Inc/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: d465e5606437c2cb507d8225877b8b4daf41308fd129c4aa00cb83131acc4343
+  sha256: fec2a5d3c6b313b865433a39826e0a8199061c177ebd62919e9de28ce6dcbd61
   patches:
     - 0001-Conda-only-patch-capnproto-build-to-work-with-anacon.patch
 
