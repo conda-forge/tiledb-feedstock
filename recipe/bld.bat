@@ -9,6 +9,7 @@ cmake -G "NMake Makefiles" ^
       -DTILEDB_WERROR=OFF ^
       -DTILEDB_TBB_SHARED=ON ^
       -DTILEDB_S3=ON ^
+      -DTILEDB_AZURE=ON ^
       -DTILEDB_HDFS=OFF ^
       -DTILEDB_SERIALIZATION=ON ^
       ..
