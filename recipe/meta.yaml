@@ -1,5 +1,5 @@
 {% set name = "TileDB" %}
-{% set version = "2.4.3" %}
+{% set version = "2.5.0" %}
 
 package:
   name: tiledb
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/TileDB-Inc/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: ce03913037437339204cc5be9dfd66a2bb95666eb8df0b7b76a8376f06cb1ebe
+  sha256: d7764bf334dbe0b90d73b08a90510ce6e1a9231f1232a5ce0dd48ee4c9ba28fb
 
 build:
   number: 0
