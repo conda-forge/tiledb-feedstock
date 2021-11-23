@@ -10,7 +10,7 @@ source:
   sha256: 9979b71c3a1ef36b776122a0b3c9f8f6eeb31cecac722e2e384285435f47227f
 
 build:
-  number: 0
+  number: 1
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=tiledb
     - {{ pin_subpackage('tiledb', 'x.x') }}
@@ -27,15 +27,15 @@ requirements:
     - bzip2
     - zstd
     - lz4-c
-    - openssl  # [osx]
-    - curl  # [arm64]
+    - openssl
+    - curl
   run:
     - zlib
     - bzip2
     - zstd
     - lz4-c
-    - openssl  # [osx]
-    - curl  # [arm64]
+    - openssl
+    - curl
 
 
 test:
@@ -68,6 +68,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - akrherz
     - stavrospapadopoulos
     - shelnutt2
     - ihnorton

@@ -8,10 +8,8 @@ export CXX=$RECIPE_DIR/cxx_wrap.sh
 export CC=$RECIPE_DIR/cc_wrap.sh
 export CMAKE_OSX_DEPLOYMENT_TARGET=${MACOSX_DEPLOYMENT_TARGET}
 
-if [[ $target_platform =~ osx-arm64 ]]; then
-  CURL_LIBS_APPEND=`$PREFIX/bin/curl-config --libs`
-  export LDFLAGS="${LDFLAGS} ${CURL_LIBS_APPEND}"
-fi
+CURL_LIBS_APPEND=`$PREFIX/bin/curl-config --libs`
+export LDFLAGS="${LDFLAGS} ${CURL_LIBS_APPEND}"
 
 if [[ $target_platform  == linux-64 ]]; then
   export LDFLAGS="${LDFLAGS} -Wl,--no-as-needed -lrt"
