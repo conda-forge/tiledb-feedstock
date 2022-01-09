@@ -1,5 +1,5 @@
 {% set name = "TileDB" %}
-  {% set version = "2.6.0-rc1" %}
+{% set version = "2.6.0rc1" %}
 
 package:
   name: tiledb
