@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/TileDB-Inc/{{ name }}/archive/{{ version }}.tar.gz
+  url: https://github.com/TileDB-Inc/{{ name }}/archive/2.6.0-rc1.tar.gz
   sha256: be3e4630f3b40b4d8362b6f3d78fab40a83c0b4532c3b7904a6d2db76b03e484
 
 build:
