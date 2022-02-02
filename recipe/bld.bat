@@ -11,6 +11,7 @@ cmake -G "NMake Makefiles" ^
       -DTILEDB_S3=ON ^
       -DTILEDB_AZURE=ON ^
       -DTILEDB_HDFS=OFF ^
+      -DCOMPILER_SUPPORTS_AVX2=OFF ^
       -DTILEDB_SERIALIZATION=ON ^
       ..
 if errorlevel 1 exit 1
