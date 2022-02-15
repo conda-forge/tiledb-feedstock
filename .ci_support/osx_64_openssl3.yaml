@@ -7,7 +7,7 @@ bzip2:
 channel_sources:
 - conda-forge
 channel_targets:
-- conda-forge main
+- conda-forge tiledb_rc
 curl:
 - '7'
 cxx_compiler:
