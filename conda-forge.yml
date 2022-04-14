@@ -6,3 +6,8 @@ travis: {osx_image: xcode6.4}
 github:
   branch_name: main
   tooling_branch_name: main
+
+azure:
+  settings_win:
+      pool:
+          vmImage: windows-2019
