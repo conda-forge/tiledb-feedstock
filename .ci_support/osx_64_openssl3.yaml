@@ -11,7 +11,7 @@ channel_targets:
 curl:
 - '7'
 cxx_compiler:
-- vs2019
+- clangxx
 cxx_compiler_version:
 - '12'
 lz4_c:

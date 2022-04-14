@@ -13,7 +13,7 @@ channel_targets:
 curl:
 - '7'
 cxx_compiler:
-- vs2019
+- gxx
 cxx_compiler_version:
 - '10'
 docker_image:
