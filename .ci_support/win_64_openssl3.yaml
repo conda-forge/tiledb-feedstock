@@ -7,7 +7,7 @@ channel_targets:
 curl:
 - '7'
 cxx_compiler:
-- vs2017
+- vs2019
 lz4_c:
 - 1.9.3
 openssl:
