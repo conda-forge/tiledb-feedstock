@@ -28,6 +28,7 @@ requirements:
     - zstd
     - lz4-c
     - openssl
+    - pcre2
     - curl
   run:
     - zlib
@@ -35,6 +36,7 @@ requirements:
     - zstd
     - lz4-c
     - openssl
+    - pcre2
     - curl
 
 
