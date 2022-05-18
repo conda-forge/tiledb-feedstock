@@ -27,8 +27,6 @@ pin_run_as_build:
     max_pin: x
   curl:
     max_pin: x
-  lz4-c:
-    max_pin: x.x.x
   zlib:
     max_pin: x.x
 target_platform:
