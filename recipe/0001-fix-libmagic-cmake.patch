@@ -1,12 +1,14 @@
 diff --git a/cmake/Modules/FindMagic_EP.cmake b/cmake/Modules/FindMagic_EP.cmake
-index 7238bae8a..f5603848b 100644
+index 7238bae8a..8ac1ed8a9 100644
 --- a/cmake/Modules/FindMagic_EP.cmake
 +++ b/cmake/Modules/FindMagic_EP.cmake
-@@ -98,6 +98,7 @@ if(NOT TILEDB_LIBMAGIC_EP_BUILT)
+@@ -98,6 +98,9 @@ if(NOT TILEDB_LIBMAGIC_EP_BUILT)
          -DCMAKE_BUILD_TYPE=${CMAKE_BUILD_TYPE}
          "-DCMAKE_C_FLAGS=${CFLAGS_DEF}"
          -Dlibmagic_STATIC_LIB=ON
 +        -DCMAKE_OSX_ARCHITECTURES=${CMAKE_OSX_ARCHITECTURES}
++        -DCMAKE_CXX_COMPILER=${CMAKE_CXX_COMPILER}
++        -DCMAKE_C_COMPILER=${CMAKE_CXX_COMPILER}
        LOG_DOWNLOAD TRUE
        LOG_CONFIGURE TRUE
        LOG_BUILD TRUE
