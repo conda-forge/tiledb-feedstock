@@ -1,14 +1,13 @@
 diff --git a/cmake/Modules/FindMagic_EP.cmake b/cmake/Modules/FindMagic_EP.cmake
-index 7238bae8a..8ac1ed8a9 100644
+index 7238bae8a..ff0aede20 100644
 --- a/cmake/Modules/FindMagic_EP.cmake
 +++ b/cmake/Modules/FindMagic_EP.cmake
-@@ -98,6 +98,9 @@ if(NOT TILEDB_LIBMAGIC_EP_BUILT)
-         -DCMAKE_BUILD_TYPE=${CMAKE_BUILD_TYPE}
-         "-DCMAKE_C_FLAGS=${CFLAGS_DEF}"
-         -Dlibmagic_STATIC_LIB=ON
-+        -DCMAKE_OSX_ARCHITECTURES=${CMAKE_OSX_ARCHITECTURES}
-+        -DCMAKE_CXX_COMPILER=${CMAKE_CXX_COMPILER}
-+        -DCMAKE_C_COMPILER=${CMAKE_CXX_COMPILER}
-       LOG_DOWNLOAD TRUE
-       LOG_CONFIGURE TRUE
-       LOG_BUILD TRUE
+@@ -90,7 +90,7 @@ if(NOT TILEDB_LIBMAGIC_EP_BUILT)
+     ExternalProject_Add(ep_magic
+       PREFIX "externals"
+       GIT_REPOSITORY "https://github.com/TileDB-Inc/file-windows.git"
+-      GIT_TAG "494060c2ea02494aabfbfc75e76d0af95c36156c"
++      GIT_TAG "37762ed878a741ff717b03d0f68d7742968e91a6"
+       GIT_SUBMODULES_RECURSE TRUE
+       UPDATE_COMMAND ""
+       CMAKE_ARGS
