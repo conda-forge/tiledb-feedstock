@@ -1,5 +1,5 @@
 {% set name = "TileDB" %}
-{% set version = "2.9.2" %}
+{% set version = "2.9.3" %}
 
 package:
   name: tiledb
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/TileDB-Inc/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 31f8f7ac81bffe9c7cb1e18837f93a6895833029abf9774dca4c77ee110d376c
+  sha256: 0c3b173a3a9db97e8f1629ef2749e06fe96ccd786c9309517610022cb0c9c7f9
   patches:
     - 0001-fix-libmagic-cmake.patch
 
