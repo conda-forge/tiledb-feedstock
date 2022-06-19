@@ -23,7 +23,7 @@ index 7238bae8a..e7e47a967 100644
        PREFIX "externals"
        GIT_REPOSITORY "https://github.com/TileDB-Inc/file-windows.git"
 -      GIT_TAG "494060c2ea02494aabfbfc75e76d0af95c36156c"
-+      GIT_TAG "1494ee365df9600fcc294ecf0592ebfa622b8713"
++      GIT_TAG "5a53ee05e3ee71424953196171d994969b916c51"
        GIT_SUBMODULES_RECURSE TRUE
        UPDATE_COMMAND ""
        CMAKE_ARGS
