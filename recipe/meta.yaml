@@ -24,7 +24,7 @@ requirements:
     - cmake
     - pkg-config  # [not win]
     - {{ compiler('cxx') }}
-    - file [arm64]
+    - file  [arm64]
   host:
     - zlib
     - bzip2
