@@ -13,7 +13,7 @@ curl:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '13'
+- '14'
 lz4_c:
 - 1.9.3
 macos_machine:
