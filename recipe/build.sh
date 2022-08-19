@@ -16,7 +16,7 @@ if [[ $target_platform  == linux-64 ]]; then
 fi
 
 if [[ $target_platform == osx-arm64  ]]; then
-  USE_OSX_ARCHITECTURES="-DCMAKE_OSX_ARCHITECTURES=arm64;x86_64"
+  export FILE_COMMAND_OVERRIDE=`which file`
 fi
 
 mkdir build && cd build
@@ -34,7 +34,6 @@ cmake ${CMAKE_ARGS} \
   -DTILEDB_LOG_OUTPUT_ON_FAILURE=ON \
   -DTILEDB_AZURE=ON \
   -DCMAKE_OSX_DEPLOYMENT_TARGET=${MACOSX_DEPLOYMENT_TARGET} \
-  ${USE_OSX_ARCHITECTURES} \
   ..
 make -j ${CPU_COUNT}
 make -C tiledb install

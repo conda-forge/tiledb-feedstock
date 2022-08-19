@@ -8,9 +8,11 @@ package:
 source:
   url: https://github.com/TileDB-Inc/{{ name }}/archive/{{ version }}.tar.gz
   sha256: 98f1362a1394e6302c35ea388e480ae591031f49d5ee72087ac346191b239958
+  patches:
+    - 0001-fix-libmagic-cmake.patch
 
 build:
-  number: 0
+  number: 1
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=tiledb
     - {{ pin_subpackage('tiledb', 'x.x') }}
@@ -22,6 +24,7 @@ requirements:
     - cmake
     - pkg-config  # [not win]
     - {{ compiler('cxx') }}
+    - file  # [arm64]
   host:
     - zlib
     - bzip2
