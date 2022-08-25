@@ -8,8 +8,6 @@ package:
 source:
   url: https://github.com/TileDB-Inc/{{ name }}/archive/{{ version }}.tar.gz
   sha256: 7e3e9fc86909544e27a292bbb82bcb5b6860e979392d49f6e5e924d98ff84c31
-  patches:
-    - 0001-fix-libmagic-cmake.patch
 
 build:
   number: 0
