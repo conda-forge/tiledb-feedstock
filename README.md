@@ -254,4 +254,5 @@ Feedstock Maintainers
 * [@nguyenv](https://github.com/nguyenv/)
 * [@shelnutt2](https://github.com/shelnutt2/)
 * [@stavrospapadopoulos](https://github.com/stavrospapadopoulos/)
+* [@xylar](https://github.com/xylar/)
 
