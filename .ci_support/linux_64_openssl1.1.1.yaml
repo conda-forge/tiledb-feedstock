@@ -18,13 +18,6 @@ lz4_c:
 - 1.9.3
 openssl:
 - 1.1.1
-pin_run_as_build:
-  bzip2:
-    max_pin: x
-  curl:
-    max_pin: x
-  zlib:
-    max_pin: x.x
 target_platform:
 - linux-64
 zlib:
