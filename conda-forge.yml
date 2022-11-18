@@ -17,3 +17,5 @@ provider:
 test_on_native_only: true
 travis:
   osx_image: xcode6.4
+conda_build:
+  pkg_format: '2'
