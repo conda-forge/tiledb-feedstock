@@ -10,7 +10,7 @@ source:
   sha256: 1ae176f4cb16d29a4499112ae76723325c11354988592dd2882438cd697baf37
 
 build:
-  number: 0
+  number: 1
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=tiledb
     - {{ pin_subpackage('tiledb', max_pin='x.x') }}
@@ -70,7 +70,6 @@ about:
 extra:
   recipe-maintainers:
     - akrherz
-    - stavrospapadopoulos
     - shelnutt2
     - ihnorton
     - nguyenv
