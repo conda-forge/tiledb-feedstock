@@ -1,11 +1,11 @@
-About tiledb
-============
+About tiledb-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tiledb-feedstock/blob/main/LICENSE.txt)
 
 Home: http://tiledb.io
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tiledb-feedstock/blob/main/LICENSE.txt)
 
 Summary: TileDB sparse and dense multi-dimensional array data management
 
@@ -253,6 +253,5 @@ Feedstock Maintainers
 * [@ihnorton](https://github.com/ihnorton/)
 * [@nguyenv](https://github.com/nguyenv/)
 * [@shelnutt2](https://github.com/shelnutt2/)
-* [@stavrospapadopoulos](https://github.com/stavrospapadopoulos/)
 * [@xylar](https://github.com/xylar/)
 
