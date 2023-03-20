@@ -1,0 +1,33 @@
+bzip2:
+- '1'
+channel_sources:
+- conda-forge
+channel_targets:
+- conda-forge main
+curl:
+- '7'
+cxx_compiler:
+- vs2019
+gcs:
+- gcs_disabled
+google_cloud_cpp:
+- 2.8.0
+libcrc32c:
+- '1.1'
+libcurl:
+- '7'
+lz4_c:
+- 1.9.3
+openssl:
+- 1.1.1
+target_platform:
+- win-64
+vc:
+- '14'
+zip_keys:
+- - gcs
+  - openssl
+zlib:
+- '1.2'
+zstd:
+- '1.5'
