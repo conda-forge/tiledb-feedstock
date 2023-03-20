@@ -8,8 +8,9 @@ cmake -G "NMake Makefiles" ^
       -DCMAKE_BUILD_TYPE=Release ^
       -DTILEDB_WERROR=OFF ^
       -DTILEDB_TBB_SHARED=ON ^
-      -DTILEDB_S3=ON ^
       -DTILEDB_AZURE=ON ^
+      -DTILEDB_GCS=ON ^
+      -DTILEDB_S3=ON ^
       -DTILEDB_HDFS=OFF ^
       -DCOMPILER_SUPPORTS_AVX2=OFF ^
       -DTILEDB_SERIALIZATION=ON ^
