@@ -28,7 +28,7 @@ requirements:
     - bzip2
     - curl
     - lz4-c
-    - google-cloud-cpp # [gcs == 'gcs_enabled']
+    - google-cloud-cpp  # [gcs == 'gcs_enabled']
     - openssl
     - zlib
     - zstd
