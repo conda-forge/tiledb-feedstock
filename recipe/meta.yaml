@@ -1,5 +1,6 @@
 {% set name = "TileDB" %}
 {% set version = "2.15.0" %}
+{% set gcs = gcs or 'gcs_disabled' %}
 
 package:
   name: tiledb
@@ -10,7 +11,7 @@ source:
   sha256: 99d89f6fece0f14904b6b215721d3da0d7ab2d98145793d9256a0a1edf01c12d
 
 build:
-  number: 0
+  number: 1
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=tiledb
     - {{ pin_subpackage('tiledb', max_pin='x.x') }}
@@ -24,21 +25,16 @@ requirements:
     - {{ compiler('cxx') }}
     - file  # [arm64]
   host:
-    - zlib
     - bzip2
-    - zstd
-    - lz4-c
-    - openssl
     - curl
-  run:
+    - lz4-c
+    - google-cloud-cpp  # [gcs == 'gcs_enabled']
+    - openssl
     - zlib
-    - bzip2
     - zstd
-    - lz4-c
-    - openssl
-    - curl
-
-
+    # see: https://github.com/conda-forge/google-cloud-cpp-feedstock/pull/108,
+    - libcrc32c  # [gcs == 'gcs_enabled' and win]
+    - libcurl    # [gcs == 'gcs_enabled' and win]
 test:
   #  downstreams:
   #  - tiledb-py
