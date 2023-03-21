@@ -5,6 +5,8 @@ pushd "%SRC_DIR%"\build
 
 if "%gcs%"=="gcs_enabled" (
     set TILEDB_GCS=ON
+) else (
+    set TILEDB_GCS=OFF
 )
 
 cmake -G "NMake Makefiles" ^
