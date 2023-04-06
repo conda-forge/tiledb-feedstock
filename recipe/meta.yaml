@@ -1,5 +1,5 @@
 {% set name = "TileDB" %}
-{% set version = "2.15.0" %}
+{% set version = "2.15.1" %}
 {% set gcs = gcs or 'gcs_disabled' %}
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://github.com/TileDB-Inc/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 99d89f6fece0f14904b6b215721d3da0d7ab2d98145793d9256a0a1edf01c12d
+  sha256: fdb11cba02b610d199a13dc0d1e2a6c0b93b74209e8acfc306860e195fab2431
 
 build:
-  number: 1
+  number: 0
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=tiledb
     - {{ pin_subpackage('tiledb', max_pin='x.x') }}
