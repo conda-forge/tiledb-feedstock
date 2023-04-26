@@ -5,7 +5,7 @@ channel_sources:
 channel_targets:
 - conda-forge main
 curl:
-- '7'
+- '8'
 cxx_compiler:
 - vs2019
 gcs:
@@ -15,7 +15,7 @@ google_cloud_cpp:
 libcrc32c:
 - '1.1'
 libcurl:
-- '7'
+- '8'
 lz4_c:
 - 1.9.3
 openssl:
