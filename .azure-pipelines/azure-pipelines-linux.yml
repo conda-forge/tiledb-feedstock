@@ -8,28 +8,28 @@ jobs:
     vmImage: ubuntu-latest
   strategy:
     matrix:
-      linux_64_gcsgcs_disabledopenssl1.1.1:
-        CONFIG: linux_64_gcsgcs_disabledopenssl1.1.1
+      linux_64_curl7gcsgcs_disabledopenssl1.1.1:
+        CONFIG: linux_64_curl7gcsgcs_disabledopenssl1.1.1
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_gcsgcs_enabledopenssl3:
-        CONFIG: linux_64_gcsgcs_enabledopenssl3
+      linux_64_curl8gcsgcs_enabledopenssl3:
+        CONFIG: linux_64_curl8gcsgcs_enabledopenssl3
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_aarch64_gcsgcs_disabledopenssl1.1.1:
-        CONFIG: linux_aarch64_gcsgcs_disabledopenssl1.1.1
+      linux_aarch64_curl7gcsgcs_disabledopenssl1.1.1:
+        CONFIG: linux_aarch64_curl7gcsgcs_disabledopenssl1.1.1
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_aarch64_gcsgcs_enabledopenssl3:
-        CONFIG: linux_aarch64_gcsgcs_enabledopenssl3
+      linux_aarch64_curl8gcsgcs_enabledopenssl3:
+        CONFIG: linux_aarch64_curl8gcsgcs_enabledopenssl3
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_ppc64le_gcsgcs_disabledopenssl1.1.1:
-        CONFIG: linux_ppc64le_gcsgcs_disabledopenssl1.1.1
+      linux_ppc64le_curl7gcsgcs_disabledopenssl1.1.1:
+        CONFIG: linux_ppc64le_curl7gcsgcs_disabledopenssl1.1.1
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_ppc64le_gcsgcs_enabledopenssl3:
-        CONFIG: linux_ppc64le_gcsgcs_enabledopenssl3
+      linux_ppc64le_curl8gcsgcs_enabledopenssl3:
+        CONFIG: linux_ppc64le_curl8gcsgcs_enabledopenssl3
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
   timeoutInMinutes: 360

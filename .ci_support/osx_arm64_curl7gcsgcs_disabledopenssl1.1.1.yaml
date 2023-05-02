@@ -1,3 +1,5 @@
+MACOSX_DEPLOYMENT_TARGET:
+- '11.0'
 bzip2:
 - '1'
 channel_sources:
@@ -7,26 +9,25 @@ channel_targets:
 curl:
 - '7'
 cxx_compiler:
-- vs2019
+- clangxx
+cxx_compiler_version:
+- '15'
 gcs:
 - gcs_disabled
 google_cloud_cpp:
 - 2.8.0
-libcrc32c:
-- '1.1'
-libcurl:
-- '7'
 lz4_c:
 - 1.9.3
+macos_machine:
+- arm64-apple-darwin20.0.0
 openssl:
 - 1.1.1
 target_platform:
-- win-64
-vc:
-- '14'
+- osx-arm64
 zip_keys:
 - - gcs
   - openssl
+  - curl
 zlib:
 - '1.2'
 zstd:
