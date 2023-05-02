@@ -10,6 +10,9 @@ cxx_compiler:
 openssl:
 - '1.1.1'
 - '3'
+curl:
+- 7
+- 8 # [openssl>=3]
 gcs:
 - gcs_disabled
 - gcs_enabled
