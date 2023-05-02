@@ -11,7 +11,7 @@ openssl:
 - '1.1.1'
 - '3'
 curl:
-- 7
+- 7 # [openssl <3 and not gcs_enabled]
 - 8 # [openssl>=3]
 gcs:
 - gcs_disabled
