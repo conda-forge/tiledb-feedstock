@@ -15,18 +15,19 @@ cxx_compiler_version:
 docker_image:
 - quay.io/condaforge/linux-anvil-cos7-x86_64
 gcs:
-- gcs_enabled
+- gcs_disabled
 google_cloud_cpp:
 - 2.8.0
 lz4_c:
 - 1.9.3
 openssl:
-- '3'
+- 1.1.1
 target_platform:
 - linux-ppc64le
 zip_keys:
 - - gcs
   - openssl
+  - curl
 zlib:
 - '1.2'
 zstd:
