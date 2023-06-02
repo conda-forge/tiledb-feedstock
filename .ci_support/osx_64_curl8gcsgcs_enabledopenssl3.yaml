@@ -17,7 +17,7 @@ cxx_compiler_version:
 gcs:
 - gcs_enabled
 google_cloud_cpp:
-- 2.10.1
+- 2.11.0
 lz4_c:
 - 1.9.3
 macos_machine:

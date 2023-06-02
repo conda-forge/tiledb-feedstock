@@ -11,7 +11,7 @@ cxx_compiler:
 gcs:
 - gcs_enabled
 google_cloud_cpp:
-- 2.10.1
+- 2.11.0
 libcrc32c:
 - '1.1'
 libcurl:
