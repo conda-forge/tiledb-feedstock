@@ -1,0 +1,36 @@
+MACOSX_DEPLOYMENT_TARGET:
+- '10.14'
+MACOSX_SDK_VERSION:
+- '10.15'
+bzip2:
+- '1'
+channel_sources:
+- conda-forge
+channel_targets:
+- conda-forge main
+curl:
+- '7'
+cxx_compiler:
+- clangxx
+cxx_compiler_version:
+- '15'
+gcs:
+- gcs_disabled
+google_cloud_cpp:
+- 2.10.1
+lz4_c:
+- 1.9.3
+macos_machine:
+- x86_64-apple-darwin13.4.0
+openssl:
+- '3'
+target_platform:
+- osx-64
+zip_keys:
+- - gcs
+  - openssl
+  - curl
+zlib:
+- '1.2'
+zstd:
+- '1.5'
