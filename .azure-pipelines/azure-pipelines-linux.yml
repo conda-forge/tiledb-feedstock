@@ -12,6 +12,10 @@ jobs:
         CONFIG: linux_64_curl7gcsgcs_disabledopenssl1.1.1
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_curl7gcsgcs_disabledopenssl3:
+        CONFIG: linux_64_curl7gcsgcs_disabledopenssl3
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
       linux_64_curl8gcsgcs_enabledopenssl3:
         CONFIG: linux_64_curl8gcsgcs_enabledopenssl3
         UPLOAD_PACKAGES: 'True'
@@ -20,12 +24,20 @@ jobs:
         CONFIG: linux_aarch64_curl7gcsgcs_disabledopenssl1.1.1
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_aarch64_curl7gcsgcs_disabledopenssl3:
+        CONFIG: linux_aarch64_curl7gcsgcs_disabledopenssl3
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
       linux_aarch64_curl8gcsgcs_enabledopenssl3:
         CONFIG: linux_aarch64_curl8gcsgcs_enabledopenssl3
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
       linux_ppc64le_curl7gcsgcs_disabledopenssl1.1.1:
         CONFIG: linux_ppc64le_curl7gcsgcs_disabledopenssl1.1.1
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_ppc64le_curl7gcsgcs_disabledopenssl3:
+        CONFIG: linux_ppc64le_curl7gcsgcs_disabledopenssl3
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
       linux_ppc64le_curl8gcsgcs_enabledopenssl3:

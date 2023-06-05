@@ -11,6 +11,9 @@ jobs:
       win_64_curl7gcsgcs_disabledopenssl1.1.1:
         CONFIG: win_64_curl7gcsgcs_disabledopenssl1.1.1
         UPLOAD_PACKAGES: 'True'
+      win_64_curl7gcsgcs_disabledopenssl3:
+        CONFIG: win_64_curl7gcsgcs_disabledopenssl3
+        UPLOAD_PACKAGES: 'True'
       win_64_curl8gcsgcs_enabledopenssl3:
         CONFIG: win_64_curl8gcsgcs_enabledopenssl3
         UPLOAD_PACKAGES: 'True'
