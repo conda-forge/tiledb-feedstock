@@ -17,7 +17,7 @@ docker_image:
 gcs:
 - gcs_disabled
 google_cloud_cpp:
-- 2.10.1
+- '2.12'
 lz4_c:
 - 1.9.3
 openssl:
