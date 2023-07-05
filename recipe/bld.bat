@@ -21,6 +21,7 @@ cmake -G "NMake Makefiles" ^
       -DCOMPILER_SUPPORTS_AVX2=OFF ^
       -DTILEDB_SERIALIZATION=ON ^
       -Dlibxml2_DIR="%LIBRARY_PREFIX%" ^
+      -DCMAKE_PREFIX_PATH="%LIBRARY_PREFIX%" ^
       ..
 if errorlevel 1 exit 1
 
