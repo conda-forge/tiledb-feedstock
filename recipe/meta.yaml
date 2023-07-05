@@ -1,5 +1,5 @@
 {% set name = "TileDB" %}
-{% set version = "2.15.4" %}
+{% set version = "2.16.0" %}
 {% set gcs = gcs or 'gcs_disabled' %}
 
 package:
@@ -8,10 +8,11 @@ package:
 
 source:
   url: https://github.com/TileDB-Inc/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 4c1b316fd626444ee4a8ae08c22f3e8a0acfe601fbc4e4683f2c490732d465d9
+  url: https://github.com/Shelnutt2/{{ name }}/archive/ss/azure-superbuild-for-conda.tar.gz
+  #sha256: 4c1b316fd626444ee4a8ae08c22f3e8a0acfe601fbc4e4683f2c490732d465d9
 
 build:
-  number: 1
+  number: 0
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=tiledb
     - {{ pin_subpackage('tiledb', min_pin='x.x', max_pin='x.x') }}
@@ -35,6 +36,9 @@ requirements:
     # see: https://github.com/conda-forge/google-cloud-cpp-feedstock/pull/108,
     - libcrc32c  # [gcs == 'gcs_enabled' and win]
     - libcurl    # [gcs == 'gcs_enabled' and win]
+    - libuuid    # [not win]
+    - boost
+    - libxml2
 test:
   #  downstreams:
   #  - tiledb-py
