@@ -1,3 +1,5 @@
+boost:
+- 1.78.0
 bzip2:
 - '1'
 cdt_name:
@@ -18,10 +20,17 @@ gcs:
 - gcs_disabled
 google_cloud_cpp:
 - '2.12'
+libuuid:
+- '2'
+libxml2:
+- '2.10'
 lz4_c:
 - 1.9.3
 openssl:
 - '3'
+pin_run_as_build:
+  boost:
+    max_pin: x.x.x
 target_platform:
 - linux-ppc64le
 zip_keys:
