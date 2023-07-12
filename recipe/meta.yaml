@@ -7,10 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  #url: https://github.com/TileDB-Inc/{{ name }}/archive/{{ version }}.tar.gz
-  url: https://github.com/TileDB-Inc/{{ name }}/archive/release-2.16.tar.gz
-  #url: https://github.com/Shelnutt2/{{ name }}/archive/ss/azure-superbuild-for-conda.tar.gz
-  #sha256: 4c1b316fd626444ee4a8ae08c22f3e8a0acfe601fbc4e4683f2c490732d465d9
+  url: https://github.com/TileDB-Inc/{{ name }}/archive/{{ version }}.tar.gz
 
 build:
   number: 0
