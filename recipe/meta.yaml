@@ -8,6 +8,7 @@ package:
 
 source:
   url: https://github.com/TileDB-Inc/{{ name }}/archive/{{ version }}.tar.gz
+  sha256: eaf47fbeb36a5fccce194b89a0101609c9122639b2c9ce590dce2e2c2b7f81f9
 
 build:
   number: 0
