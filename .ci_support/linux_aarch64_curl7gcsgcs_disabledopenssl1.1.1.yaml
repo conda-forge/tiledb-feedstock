@@ -1,7 +1,5 @@
 BUILD:
 - aarch64-conda_cos7-linux-gnu
-boost:
-- 1.78.0
 bzip2:
 - '1'
 cdt_arch:
@@ -24,17 +22,12 @@ gcs:
 - gcs_disabled
 google_cloud_cpp:
 - '2.12'
-libuuid:
-- '2'
 libxml2:
 - '2.11'
 lz4_c:
 - 1.9.3
 openssl:
 - 1.1.1
-pin_run_as_build:
-  boost:
-    max_pin: x.x.x
 target_platform:
 - linux-aarch64
 zip_keys:

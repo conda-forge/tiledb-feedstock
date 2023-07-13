@@ -1,7 +1,5 @@
 MACOSX_DEPLOYMENT_TARGET:
 - '11.0'
-boost:
-- 1.78.0
 bzip2:
 - '1'
 channel_sources:
@@ -18,8 +16,6 @@ gcs:
 - gcs_disabled
 google_cloud_cpp:
 - '2.12'
-libuuid:
-- '2'
 libxml2:
 - '2.11'
 lz4_c:
@@ -28,9 +24,6 @@ macos_machine:
 - arm64-apple-darwin20.0.0
 openssl:
 - '3'
-pin_run_as_build:
-  boost:
-    max_pin: x.x.x
 target_platform:
 - osx-arm64
 zip_keys:
