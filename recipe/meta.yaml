@@ -39,6 +39,9 @@ requirements:
     - libcurl    # [gcs == 'gcs_enabled' and win]
     - libxml2
 test:
+  requires:
+    - cxx-compiler
+    - cmake
   #  downstreams:
   #  - tiledb-py
   commands:
