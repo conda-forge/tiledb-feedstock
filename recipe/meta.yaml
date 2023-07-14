@@ -13,7 +13,7 @@ source:
     - 0001-Fix-order-of-azure-static-library-linking.patch
 
 build:
-  number: 2
+  number: 3
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=tiledb
     - {{ pin_subpackage('tiledb', min_pin='x.x', max_pin='x.x') }}
