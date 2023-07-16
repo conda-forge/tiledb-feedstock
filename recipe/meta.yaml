@@ -42,6 +42,7 @@ test:
   requires:
     - cxx-compiler
     - cmake
+    - make
   #  downstreams:
   #  - tiledb-py
   commands:
