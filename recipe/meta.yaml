@@ -40,9 +40,9 @@ requirements:
     - libxml2
 test:
   requires:
-    - cxx-compiler
+    - {{ compiler('cxx') }}
     - cmake
-    - make
+    - make  # [unix]
   #  downstreams:
   #  - tiledb-py
   commands:
