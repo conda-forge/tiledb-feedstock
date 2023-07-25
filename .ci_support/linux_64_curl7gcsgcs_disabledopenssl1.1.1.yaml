@@ -21,7 +21,7 @@ google_cloud_cpp:
 libabseil:
 - '20230802'
 libxml2:
-- '2.11'
+- '2.9'
 lz4_c:
 - 1.9.3
 openssl:

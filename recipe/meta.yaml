@@ -36,7 +36,7 @@ requirements:
     # see: https://github.com/conda-forge/google-cloud-cpp-feedstock/pull/108,
     - libcrc32c  # [gcs == 'gcs_enabled' and win]
     - libcurl    # [gcs == 'gcs_enabled' and win]
-    - libxml2
+    - libxml2==2.9.*
 test:
   requires:
     - {{ compiler('cxx') }}

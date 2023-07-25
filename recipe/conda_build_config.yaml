@@ -19,6 +19,8 @@ gcs:
 - gcs_disabled
 - gcs_disabled
 - gcs_enabled
+libxml2:
+- 2.9
 zip_keys:
 - gcs
 - openssl
