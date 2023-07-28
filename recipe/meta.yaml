@@ -1,5 +1,5 @@
 {% set name = "TileDB" %}
-{% set version = "2.16.0" %}
+{% set version = "2.16.1" %}
 {% set gcs = gcs or 'gcs_disabled' %}
 
 package:
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://github.com/TileDB-Inc/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: eaf47fbeb36a5fccce194b89a0101609c9122639b2c9ce590dce2e2c2b7f81f9
+  sha256: a6fdf34809486bbd0f7cb065fc575673b3a47cc2f630e9eca836af58d0d7e3da
   patches:
     - 0001-Fix-order-of-azure-static-library-linking.patch
 
 build:
-  number: 3
+  number: 0
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=tiledb
     - {{ pin_subpackage('tiledb', min_pin='x.x', max_pin='x.x') }}
