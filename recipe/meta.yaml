@@ -9,8 +9,6 @@ package:
 source:
   url: https://github.com/TileDB-Inc/{{ name }}/archive/{{ version }}.tar.gz
   sha256: a6fdf34809486bbd0f7cb065fc575673b3a47cc2f630e9eca836af58d0d7e3da
-  patches:
-    - 0001-Fix-order-of-azure-static-library-linking.patch
 
 build:
   number: 0
