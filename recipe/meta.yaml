@@ -38,6 +38,23 @@ requirements:
     - libcurl    # [gcs == 'gcs_enabled' and win]
     - libxml2==2.9.*
     - libiconv
+    - icu
+    - xz
+  run:
+    - bzip2
+    - curl
+    - lz4-c
+    - google-cloud-cpp  # [gcs == 'gcs_enabled']
+    - openssl
+    - zlib
+    - zstd
+    # see: https://github.com/conda-forge/google-cloud-cpp-feedstock/pull/108,
+    - libcrc32c  # [gcs == 'gcs_enabled' and win]
+    - libcurl    # [gcs == 'gcs_enabled' and win]
+    - libxml2==2.9.*
+    - libiconv
+    - icu
+    - xz
 test:
   requires:
     - {{ compiler('cxx') }}
