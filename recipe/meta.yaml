@@ -37,6 +37,7 @@ requirements:
     - libcrc32c  # [gcs == 'gcs_enabled' and win]
     - libcurl    # [gcs == 'gcs_enabled' and win]
     - libxml2==2.9.*
+    - libiconv
 test:
   requires:
     - {{ compiler('cxx') }}
