@@ -1,0 +1,37 @@
+From edde4925330c43da1f922373e74e6e8850eef7a1 Mon Sep 17 00:00:00 2001
+From: Seth Shelnutt <Shelnutt2@gmail.com>
+Date: Tue, 15 Aug 2023 08:10:22 -0400
+Subject: [PATCH] LibXML2 needs to be linked after Azure libraries
+
+This solves a symbol error on linux with cross-compilation were symbol
+resolution doesn't happen because the linking of libxml2 happens before
+Azure is linked in.
+---
+ tiledb/CMakeLists.txt | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+diff --git a/tiledb/CMakeLists.txt b/tiledb/CMakeLists.txt
+index a3c3ce933..16e785286 100644
+--- a/tiledb/CMakeLists.txt
++++ b/tiledb/CMakeLists.txt
+@@ -571,13 +571,16 @@ if (TILEDB_AZURE)
+         find_package(LibXml2 REQUIRED)
+         install_target_libs(LibXml2::LibXml2)
+       endif()
+-      target_link_libraries(TILEDB_CORE_OBJECTS_ILIB INTERFACE LibXml2::LibXml2)
+     endif()
+     target_link_libraries(TILEDB_CORE_OBJECTS_ILIB
+             INTERFACE
+             Azure::azure-storage-blobs
+             Azure::azure-storage-common
+             Azure::azure-core)
++    # Link xml after Azure to allow symbol resolution on all platforms
++    if (NOT WIN32)
++      target_link_libraries(TILEDB_CORE_OBJECTS_ILIB INTERFACE LibXml2::LibXml2)
++    endif()
+   endif()
+ endif()
+ 
+-- 
+2.40.0
+

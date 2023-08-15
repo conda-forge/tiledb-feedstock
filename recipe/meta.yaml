@@ -9,9 +9,11 @@ package:
 source:
   url: https://github.com/TileDB-Inc/{{ name }}/archive/{{ version }}.tar.gz
   sha256: bfa06f71dfe9ef4de4abae55712213ef146326c8e9b56cddcdb73d3c503f0c63
+  patches:
+    - 0001-LibXML2-needs-to-be-linked-after-Azure-libraries.patch
 
 build:
-  number: 0
+  number: 1
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=tiledb
     - {{ pin_subpackage('tiledb', min_pin='x.x', max_pin='x.x') }}
