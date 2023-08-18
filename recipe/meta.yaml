@@ -25,7 +25,9 @@ requirements:
     - {{ compiler('cxx') }}
     - file  # [arm64]
   host:
+    - azure-core-cpp
     - azure-identity-cpp
+    - azure-storage-common-cpp
     - azure-storage-blobs-cpp
     - bzip2
     - libcurl
