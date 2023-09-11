@@ -13,7 +13,7 @@ source:
     - 0001-LibXML2-needs-to-be-linked-after-Azure-libraries.patch
 
 build:
-  number: 1
+  number: 2
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=tiledb
     - {{ pin_subpackage('tiledb', min_pin='x.x', max_pin='x.x') }}
@@ -37,6 +37,8 @@ requirements:
     # see: https://github.com/conda-forge/google-cloud-cpp-feedstock/pull/108,
     - libcrc32c  # [gcs == 'gcs_enabled' and win]
     - libcurl    # [gcs == 'gcs_enabled' and win]
+    # A downstream of google-cloud-cpp dependency in conda-forge-pinning
+    - libgrpc  # [gcs == 'gcs_enabled']
     - libxml2
 test:
   requires:
