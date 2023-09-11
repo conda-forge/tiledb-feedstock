@@ -16,6 +16,8 @@ libcrc32c:
 - '1.1'
 libcurl:
 - '8'
+libgrpc:
+- '1.56'
 libxml2:
 - '2.11'
 lz4_c:

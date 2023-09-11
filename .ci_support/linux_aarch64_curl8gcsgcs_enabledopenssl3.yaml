@@ -22,6 +22,8 @@ gcs:
 - gcs_enabled
 google_cloud_cpp:
 - '2.12'
+libgrpc:
+- '1.56'
 libxml2:
 - '2.11'
 lz4_c:
