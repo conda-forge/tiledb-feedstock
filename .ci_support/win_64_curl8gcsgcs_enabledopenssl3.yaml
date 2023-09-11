@@ -12,6 +12,8 @@ gcs:
 - gcs_enabled
 google_cloud_cpp:
 - '2.12'
+libabseil:
+- '20230125'
 libcrc32c:
 - '1.1'
 libcurl:

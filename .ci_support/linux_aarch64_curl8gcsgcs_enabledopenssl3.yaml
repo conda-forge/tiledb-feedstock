@@ -22,6 +22,8 @@ gcs:
 - gcs_enabled
 google_cloud_cpp:
 - '2.12'
+libabseil:
+- '20230125'
 libxml2:
 - '2.11'
 lz4_c:
