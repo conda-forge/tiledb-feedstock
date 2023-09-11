@@ -13,7 +13,7 @@ source:
     - 0001-LibXML2-needs-to-be-linked-after-Azure-libraries.patch
 
 build:
-  number: 1
+  number: 2
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=tiledb
     - {{ pin_subpackage('tiledb', min_pin='x.x', max_pin='x.x') }}
@@ -31,6 +31,7 @@ requirements:
     - curl
     - lz4-c
     - google-cloud-cpp  # [gcs == 'gcs_enabled']
+    - libabseil  # [gcs == 'gcs_enabled']
     - openssl
     - zlib
     - zstd
