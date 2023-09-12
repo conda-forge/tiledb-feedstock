@@ -13,7 +13,7 @@ gcs:
 google_cloud_cpp:
 - '2.12'
 libabseil:
-- '20230125'
+- '20230802'
 libcrc32c:
 - '1.1'
 libcurl:
