@@ -1,5 +1,5 @@
 {% set name = "TileDB" %}
-{% set version = "2.16.3" %}
+{% set version = "2.17.0" %}
 {% set gcs = gcs or 'gcs_disabled' %}
 
 package:
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://github.com/TileDB-Inc/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: bfa06f71dfe9ef4de4abae55712213ef146326c8e9b56cddcdb73d3c503f0c63
+  sha256: 84966a71ef4113faf69f321ff09968f54e6ac858ff17c2ef5b4ed0f1f702fecb
   patches:
     - 0001-LibXML2-needs-to-be-linked-after-Azure-libraries.patch
 
 build:
-  number: 3
+  number: 0
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=tiledb
     - {{ pin_subpackage('tiledb', min_pin='x.x', max_pin='x.x') }}
