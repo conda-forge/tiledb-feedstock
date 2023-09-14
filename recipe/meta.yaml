@@ -9,8 +9,6 @@ package:
 source:
   url: https://github.com/TileDB-Inc/{{ name }}/archive/{{ version }}.tar.gz
   sha256: 84966a71ef4113faf69f321ff09968f54e6ac858ff17c2ef5b4ed0f1f702fecb
-  patches:
-    - 0001-LibXML2-needs-to-be-linked-after-Azure-libraries.patch
 
 build:
   number: 0
