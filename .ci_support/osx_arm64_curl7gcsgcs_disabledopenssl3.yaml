@@ -11,7 +11,7 @@ curl:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '15'
+- '16'
 gcs:
 - gcs_disabled
 google_cloud_cpp:
