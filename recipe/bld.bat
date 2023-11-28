@@ -11,6 +11,7 @@ if "%gcs%"=="gcs_enabled" (
 
 cmake -G "NMake Makefiles" ^
       -DCMAKE_INSTALL_PREFIX="%LIBRARY_PREFIX%" ^
+      -DTILEDB_VCPKG=OFF ^
       -DCMAKE_BUILD_TYPE=Release ^
       -DTILEDB_WERROR=OFF ^
       -DTILEDB_AZURE=ON ^

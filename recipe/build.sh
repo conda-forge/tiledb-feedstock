@@ -27,6 +27,7 @@ fi
 
 mkdir build && cd build
 cmake ${CMAKE_ARGS} \
+  -DTILEDB_VCPKG=OFF \
   -DCMAKE_INSTALL_PREFIX="${PREFIX}" \
   -DCMAKE_BUILD_TYPE=Release \
   -DTILEDB_WERROR=OFF \
