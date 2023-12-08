@@ -11,7 +11,7 @@ source:
   sha256: 9514856314b859d3d10fcdcf9e4999aead5c09dc5f37d10db68df73a5982bd2f
 
 build:
-  number: 1
+  number: 2
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=tiledb
     - {{ pin_subpackage('tiledb', max_pin='x.x') }}
@@ -35,7 +35,7 @@ requirements:
     - zstd
     # see: https://github.com/conda-forge/google-cloud-cpp-feedstock/pull/108,
     - libcrc32c  # [gcs == 'gcs_enabled' and win]
-    - libcurl    # [gcs == 'gcs_enabled' and win]
+    - libcurl    # [win]
     - libxml2
 test:
   requires:
