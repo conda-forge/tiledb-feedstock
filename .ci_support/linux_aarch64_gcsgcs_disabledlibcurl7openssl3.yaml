@@ -10,8 +10,6 @@ channel_sources:
 - conda-forge
 channel_targets:
 - conda-forge main
-curl:
-- '8'
 cxx_compiler:
 - gxx
 cxx_compiler_version:
@@ -19,11 +17,13 @@ cxx_compiler_version:
 docker_image:
 - quay.io/condaforge/linux-anvil-cos7-x86_64
 gcs:
-- gcs_enabled
+- gcs_disabled
 google_cloud_cpp:
 - '2.12'
 libabseil:
 - '20230802'
+libcurl:
+- '7'
 libxml2:
 - '2.12'
 lz4_c:
@@ -35,7 +35,7 @@ target_platform:
 zip_keys:
 - - gcs
   - openssl
-  - curl
+  - libcurl
 zlib:
 - '1.2'
 zstd:

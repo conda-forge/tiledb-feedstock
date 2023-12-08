@@ -8,23 +8,23 @@ jobs:
     vmImage: macOS-11
   strategy:
     matrix:
-      osx_64_curl7gcsgcs_disabledopenssl1.1.1:
-        CONFIG: osx_64_curl7gcsgcs_disabledopenssl1.1.1
+      osx_64_gcsgcs_disabledlibcurl7openssl1.1.1:
+        CONFIG: osx_64_gcsgcs_disabledlibcurl7openssl1.1.1
         UPLOAD_PACKAGES: 'True'
-      osx_64_curl7gcsgcs_disabledopenssl3:
-        CONFIG: osx_64_curl7gcsgcs_disabledopenssl3
+      osx_64_gcsgcs_disabledlibcurl7openssl3:
+        CONFIG: osx_64_gcsgcs_disabledlibcurl7openssl3
         UPLOAD_PACKAGES: 'True'
-      osx_64_curl8gcsgcs_enabledopenssl3:
-        CONFIG: osx_64_curl8gcsgcs_enabledopenssl3
+      osx_64_gcsgcs_enabledlibcurl8openssl3:
+        CONFIG: osx_64_gcsgcs_enabledlibcurl8openssl3
         UPLOAD_PACKAGES: 'True'
-      osx_arm64_curl7gcsgcs_disabledopenssl1.1.1:
-        CONFIG: osx_arm64_curl7gcsgcs_disabledopenssl1.1.1
+      osx_arm64_gcsgcs_disabledlibcurl7openssl1.1.1:
+        CONFIG: osx_arm64_gcsgcs_disabledlibcurl7openssl1.1.1
         UPLOAD_PACKAGES: 'True'
-      osx_arm64_curl7gcsgcs_disabledopenssl3:
-        CONFIG: osx_arm64_curl7gcsgcs_disabledopenssl3
+      osx_arm64_gcsgcs_disabledlibcurl7openssl3:
+        CONFIG: osx_arm64_gcsgcs_disabledlibcurl7openssl3
         UPLOAD_PACKAGES: 'True'
-      osx_arm64_curl8gcsgcs_enabledopenssl3:
-        CONFIG: osx_arm64_curl8gcsgcs_enabledopenssl3
+      osx_arm64_gcsgcs_enabledlibcurl8openssl3:
+        CONFIG: osx_arm64_gcsgcs_enabledlibcurl8openssl3
         UPLOAD_PACKAGES: 'True'
   timeoutInMinutes: 360
 

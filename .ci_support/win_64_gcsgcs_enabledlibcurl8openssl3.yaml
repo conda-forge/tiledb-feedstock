@@ -1,37 +1,35 @@
-MACOSX_DEPLOYMENT_TARGET:
-- '11.0'
 bzip2:
 - '1'
 channel_sources:
 - conda-forge
 channel_targets:
 - conda-forge main
-curl:
-- '8'
 cxx_compiler:
-- clangxx
-cxx_compiler_version:
-- '16'
+- vs2019
 gcs:
 - gcs_enabled
 google_cloud_cpp:
 - '2.12'
 libabseil:
 - '20230802'
+libcrc32c:
+- '1.1'
+libcurl:
+- '8'
 libxml2:
 - '2.12'
 lz4_c:
 - 1.9.3
-macos_machine:
-- arm64-apple-darwin20.0.0
 openssl:
 - '3'
 target_platform:
-- osx-arm64
+- win-64
+vc:
+- '14'
 zip_keys:
 - - gcs
   - openssl
-  - curl
+  - libcurl
 zlib:
 - '1.2'
 zstd:
