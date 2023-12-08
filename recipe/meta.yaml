@@ -11,7 +11,7 @@ source:
   sha256: 9514856314b859d3d10fcdcf9e4999aead5c09dc5f37d10db68df73a5982bd2f
 
 build:
-  number: 1
+  number: 2
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=tiledb
     - {{ pin_subpackage('tiledb', max_pin='x.x') }}
@@ -26,7 +26,7 @@ requirements:
     - file  # [arm64]
   host:
     - bzip2
-    - curl
+    - libcurl
     - lz4-c
     - google-cloud-cpp  # [gcs == 'gcs_enabled']
     - libabseil  # [gcs == 'gcs_enabled']
@@ -35,7 +35,6 @@ requirements:
     - zstd
     # see: https://github.com/conda-forge/google-cloud-cpp-feedstock/pull/108,
     - libcrc32c  # [gcs == 'gcs_enabled' and win]
-    - libcurl    # [gcs == 'gcs_enabled' and win]
     - libxml2
 test:
   requires:
@@ -53,7 +52,12 @@ test:
     - if exist %LIBRARY_INC%\\tiledb\\tiledb.h (exit 0) else (exit 1)  # [win]
     - if exist %LIBRARY_LIB%\\tiledb.lib (exit 0) else (exit 1)  # [win]
     - if exist %LIBRARY_LIB%\\cmake\\TileDB\\TileDBConfig.cmake (exit 0) else (exit 1)  # [win]
-    - if exist %PREFIX%\\Library\\bin\\tiledb.dll (exit 0) else (exit 1)  # [win]
+    - if exist %LIBRARY_BIN%\\tiledb.dll (exit 0) else (exit 1)  # [win]
+
+    # libcurl must be installed at runtime
+    - test -e $PREFIX/lib/libcurl$SHLIB_EXT  # [not win]
+    - if exist %LIBRARY_LIB%\\libcurl.lib (exit 0) else (exit 1)  # [win]
+    - if exist %LIBRARY_BIN%\\libcurl.dll (exit 0) else (exit 1)  # [win]
 
 about:
   home: http://tiledb.io
