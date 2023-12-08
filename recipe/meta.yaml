@@ -35,8 +35,10 @@ requirements:
     - zstd
     # see: https://github.com/conda-forge/google-cloud-cpp-feedstock/pull/108,
     - libcrc32c  # [gcs == 'gcs_enabled' and win]
-    - libcurl    # [win]
     - libxml2
+  run:
+    - libcurl    # [win]
+    
 test:
   requires:
     - {{ compiler('cxx') }}
