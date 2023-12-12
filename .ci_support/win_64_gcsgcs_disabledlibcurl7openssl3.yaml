@@ -4,12 +4,10 @@ channel_sources:
 - conda-forge
 channel_targets:
 - conda-forge main
-curl:
-- '8'
 cxx_compiler:
 - vs2019
 gcs:
-- gcs_enabled
+- gcs_disabled
 google_cloud_cpp:
 - '2.12'
 libabseil:
@@ -17,7 +15,7 @@ libabseil:
 libcrc32c:
 - '1.1'
 libcurl:
-- '8'
+- '7'
 libxml2:
 - '2.12'
 lz4_c:
@@ -31,7 +29,7 @@ vc:
 zip_keys:
 - - gcs
   - openssl
-  - curl
+  - libcurl
 zlib:
 - '1.2'
 zstd:

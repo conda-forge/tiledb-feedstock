@@ -1,17 +1,11 @@
-BUILD:
-- aarch64-conda_cos7-linux-gnu
 bzip2:
 - '1'
-cdt_arch:
-- aarch64
 cdt_name:
 - cos7
 channel_sources:
 - conda-forge
 channel_targets:
 - conda-forge main
-curl:
-- '7'
 cxx_compiler:
 - gxx
 cxx_compiler_version:
@@ -24,6 +18,8 @@ google_cloud_cpp:
 - '2.12'
 libabseil:
 - '20230802'
+libcurl:
+- '7'
 libxml2:
 - '2.12'
 lz4_c:
@@ -31,11 +27,11 @@ lz4_c:
 openssl:
 - 1.1.1
 target_platform:
-- linux-aarch64
+- linux-ppc64le
 zip_keys:
 - - gcs
   - openssl
-  - curl
+  - libcurl
 zlib:
 - '1.2'
 zstd:
