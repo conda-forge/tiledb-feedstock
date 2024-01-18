@@ -19,7 +19,7 @@ libabseil:
 libcurl:
 - '8'
 libxml2:
-- '2.12'
+- '2'
 lz4_c:
 - 1.9.3
 macos_machine:

@@ -17,7 +17,7 @@ libcrc32c:
 libcurl:
 - '7'
 libxml2:
-- '2.12'
+- '2'
 lz4_c:
 - 1.9.3
 openssl:
