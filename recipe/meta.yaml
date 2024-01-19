@@ -78,6 +78,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - jdblischak
     - KiterLuc
     - akrherz
     - shelnutt2
