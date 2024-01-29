@@ -1,5 +1,5 @@
 {% set name = "TileDB" %}
-{% set version = "2.19.0" %}
+{% set version = "2.19.1" %}
 {% set gcs = gcs or 'gcs_disabled' %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/TileDB-Inc/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: c607801c4ecda58005e84db3b8b1f72da0100a5b7e149601358b9a254afff962
+  sha256: b6a73b1b7d2ee5305f919d9f94883abc68e8c948257e22ce8771a72a22b46d95
 
 build:
   number: 0
