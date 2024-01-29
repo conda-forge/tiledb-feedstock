@@ -294,6 +294,7 @@ Feedstock Maintainers
 * [@KiterLuc](https://github.com/KiterLuc/)
 * [@akrherz](https://github.com/akrherz/)
 * [@ihnorton](https://github.com/ihnorton/)
+* [@jdblischak](https://github.com/jdblischak/)
 * [@nguyenv](https://github.com/nguyenv/)
 * [@shelnutt2](https://github.com/shelnutt2/)
 * [@xylar](https://github.com/xylar/)
