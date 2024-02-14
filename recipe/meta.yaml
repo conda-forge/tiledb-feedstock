@@ -28,8 +28,6 @@ requirements:
     - azure-core-cpp <1.11
     - azure-storage-common-cpp
     - azure-storage-blobs-cpp
-    - boost-cpp
-    - libboost
     - libboost-devel
     - bzip2
     - libcurl
