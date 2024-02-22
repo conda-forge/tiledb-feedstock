@@ -14,7 +14,6 @@ build:
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=tiledb
     - {{ pin_subpackage('tiledb', max_pin='x.x') }}
-  skip: true  # [win and vc<14]
 
 requirements:
   build:
