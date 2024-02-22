@@ -7,19 +7,3 @@ c_compiler:
 - vs2019 # [win]
 cxx_compiler:
 - vs2019 # [win]
-openssl:
-- '1.1.1'
-- '3'
-- '3'
-libcurl:
-- 7
-- 7
-- 8
-gcs:
-- gcs_disabled
-- gcs_disabled
-- gcs_enabled
-zip_keys:
-- gcs
-- openssl
-- libcurl
