@@ -1,9 +1,5 @@
-BUILD:
-- aarch64-conda_cos7-linux-gnu
 bzip2:
 - '1'
-cdt_arch:
-- aarch64
 cdt_name:
 - cos7
 channel_sources:
@@ -16,14 +12,14 @@ cxx_compiler_version:
 - '12'
 docker_image:
 - quay.io/condaforge/linux-anvil-cos7-x86_64
-gcs:
-- gcs_enabled
-google_cloud_cpp:
-- '2.12'
 libabseil:
 - '20230802'
 libcurl:
 - '8'
+libgoogle_cloud_devel:
+- '2.17'
+libgoogle_cloud_storage_devel:
+- '2.17'
 libxml2:
 - '2'
 lz4_c:
@@ -31,11 +27,7 @@ lz4_c:
 openssl:
 - '3'
 target_platform:
-- linux-aarch64
-zip_keys:
-- - gcs
-  - openssl
-  - libcurl
+- linux-ppc64le
 zlib:
 - '1.2'
 zstd:
