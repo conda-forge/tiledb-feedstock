@@ -8,40 +8,28 @@ jobs:
     vmImage: ubuntu-latest
   strategy:
     matrix:
-      linux_64_gcsgcs_disabledlibcurl7openssl1.1.1:
-        CONFIG: linux_64_gcsgcs_disabledlibcurl7openssl1.1.1
+      linux_64_gcsgcs_disabledlibcurl7:
+        CONFIG: linux_64_gcsgcs_disabledlibcurl7
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_gcsgcs_disabledlibcurl7openssl3:
-        CONFIG: linux_64_gcsgcs_disabledlibcurl7openssl3
+      linux_64_gcsgcs_enabledlibcurl8:
+        CONFIG: linux_64_gcsgcs_enabledlibcurl8
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_gcsgcs_enabledlibcurl8openssl3:
-        CONFIG: linux_64_gcsgcs_enabledlibcurl8openssl3
+      linux_aarch64_gcsgcs_disabledlibcurl7:
+        CONFIG: linux_aarch64_gcsgcs_disabledlibcurl7
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_aarch64_gcsgcs_disabledlibcurl7openssl1.1.1:
-        CONFIG: linux_aarch64_gcsgcs_disabledlibcurl7openssl1.1.1
+      linux_aarch64_gcsgcs_enabledlibcurl8:
+        CONFIG: linux_aarch64_gcsgcs_enabledlibcurl8
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_aarch64_gcsgcs_disabledlibcurl7openssl3:
-        CONFIG: linux_aarch64_gcsgcs_disabledlibcurl7openssl3
+      linux_ppc64le_gcsgcs_disabledlibcurl7:
+        CONFIG: linux_ppc64le_gcsgcs_disabledlibcurl7
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_aarch64_gcsgcs_enabledlibcurl8openssl3:
-        CONFIG: linux_aarch64_gcsgcs_enabledlibcurl8openssl3
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_ppc64le_gcsgcs_disabledlibcurl7openssl1.1.1:
-        CONFIG: linux_ppc64le_gcsgcs_disabledlibcurl7openssl1.1.1
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_ppc64le_gcsgcs_disabledlibcurl7openssl3:
-        CONFIG: linux_ppc64le_gcsgcs_disabledlibcurl7openssl3
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_ppc64le_gcsgcs_enabledlibcurl8openssl3:
-        CONFIG: linux_ppc64le_gcsgcs_enabledlibcurl8openssl3
+      linux_ppc64le_gcsgcs_enabledlibcurl8:
+        CONFIG: linux_ppc64le_gcsgcs_enabledlibcurl8
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
   timeoutInMinutes: 360

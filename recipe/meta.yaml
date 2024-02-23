@@ -15,7 +15,6 @@ build:
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=tiledb
     - {{ pin_subpackage('tiledb', max_pin='x.x') }}
-  skip: true  # [win and vc<14]
 
 requirements:
   build:
@@ -29,10 +28,11 @@ requirements:
     - azure-storage-common-cpp
     - azure-storage-blobs-cpp
     - bzip2
+    - libabseil                         # [gcs == 'gcs_enabled']
+    - libgoogle-cloud-devel             # [gcs == 'gcs_enabled']
+    - libgoogle-cloud-storage-devel     # [gcs == 'gcs_enabled']
     - libcurl
     - lz4-c
-    - google-cloud-cpp  # [gcs == 'gcs_enabled']
-    - libabseil  # [gcs == 'gcs_enabled']
     - openssl
     - zlib
     - zstd
