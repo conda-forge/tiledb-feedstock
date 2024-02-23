@@ -17,9 +17,9 @@ libabseil:
 libcurl:
 - '7'
 libgoogle_cloud_devel:
-- '2.17'
+- '2.21'
 libgoogle_cloud_storage_devel:
-- '2.17'
+- '2.21'
 libxml2:
 - '2'
 lz4_c:
