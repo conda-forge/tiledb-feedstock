@@ -2,3 +2,16 @@ MACOSX_SDK_VERSION:  # [osx and x86_64]
   - 10.15            # [osx and x86_64]
 MACOSX_DEPLOYMENT_TARGET:  # [osx and x86_64]
   - "10.14"                # [osx and x86_64]
+
+# please remove the following ASAP (due to security concerns and CI duplication)!
+# curl 7 & 8 are 100% compatible, no-one in conda-forge is pinning to libcurl <8,
+# and we shouldn't be building for the obsolete v7 anymore, or encouraging its use
+libcurl:
+- 7
+- 8
+gcs:
+- gcs_disabled
+- gcs_enabled
+zip_keys:
+- gcs
+- libcurl

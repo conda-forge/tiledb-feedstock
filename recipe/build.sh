@@ -19,6 +19,12 @@ if [[ $target_platform == osx-arm64  ]]; then
   export FILE_COMMAND_OVERRIDE=`which file`
 fi
 
+if [[ $gcs == gcs_enabled ]]; then
+  export TILEDB_GCS=ON
+else
+  export TILEDB_GCS=OFF
+fi
+
 mkdir build && cd build
 cmake ${CMAKE_ARGS} \
   -DTILEDB_VCPKG=OFF \
@@ -31,7 +37,7 @@ cmake ${CMAKE_ARGS} \
   -DSANITIZER=OFF \
   -DCOMPILER_SUPPORTS_AVX2:BOOL=FALSE \
   -DTILEDB_AZURE=ON \
-  -DTILEDB_GCS=ON \
+  -DTILEDB_GCS=${TILEDB_GCS} \
   -DTILEDB_S3=ON \
   -DTILEDB_SERIALIZATION=ON \
   -DTILEDB_LOG_OUTPUT_ON_FAILURE=ON \
