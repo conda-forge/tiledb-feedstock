@@ -1,15 +1,21 @@
 bzip2:
 - '1'
+cdt_name:
+- cos7
 channel_sources:
 - conda-forge
 channel_targets:
 - conda-forge main
 cxx_compiler:
-- vs2019
+- gxx
+cxx_compiler_version:
+- '12'
+docker_image:
+- quay.io/condaforge/linux-anvil-cos7-x86_64
+gcs:
+- gcs_enabled
 libabseil:
 - '20230802'
-libcrc32c:
-- '1.1'
 libcurl:
 - '8'
 libgoogle_cloud_devel:
@@ -23,7 +29,10 @@ lz4_c:
 openssl:
 - '3'
 target_platform:
-- win-64
+- linux-ppc64le
+zip_keys:
+- - gcs
+  - libcurl
 zlib:
 - '1.2'
 zstd:
