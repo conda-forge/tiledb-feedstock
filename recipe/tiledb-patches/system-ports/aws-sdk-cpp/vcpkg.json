@@ -1,0 +1,15 @@
+{
+  "name": "aws-sdk-cpp",
+  "version-string": "system",
+  "features": {
+    "identity-management": {
+      "description": "C++ SDK for the AWS identity-management service"
+    },
+    "s3": {
+      "description": "C++ SDK for the AWS s3 service"
+    },
+    "sts": {
+      "description": "C++ SDK for the AWS sts service"
+    }
+  }
+}

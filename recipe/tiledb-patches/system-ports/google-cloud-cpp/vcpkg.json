@@ -1,0 +1,9 @@
+{
+  "name": "google-cloud-cpp",
+  "version-string": "system",
+  "features": {
+    "storage": {
+      "description": "The Google Cloud Storage C++ client library"
+    }
+  }
+}

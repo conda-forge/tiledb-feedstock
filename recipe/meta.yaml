@@ -11,7 +11,7 @@ source:
   sha256: d9d52de7eef25c9e358f0dd6e696dc11a08d5b4d6c4ede88f11afffd32ec31c2
 
 build:
-  number: 1
+  number: 2
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=tiledb
     - {{ pin_subpackage('tiledb', max_pin='x.x') }}
@@ -23,6 +23,12 @@ requirements:
     - pkg-config  # [not win]
     - {{ compiler('cxx') }}
     - file  # [arm64]
+    - zip  # [not win]
+    - unzip  # [not win]
+    - curl  # [not win]
+    - tar  # [not win]
+    # These are declared as vcpkg dependencies by TileDB but are not actually used.
+    - libxml2  # [not win]
   host:
     - aws-sdk-cpp
     - aws-crt-cpp
@@ -40,7 +46,6 @@ requirements:
     - zstd
     # see: https://github.com/conda-forge/google-cloud-cpp-feedstock/pull/108,
     - libcrc32c  # [gcs == 'gcs_enabled' and win]
-    - libxml2
 test:
   requires:
     - {{ compiler('cxx') }}
