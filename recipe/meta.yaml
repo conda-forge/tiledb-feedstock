@@ -9,6 +9,8 @@ package:
 source:
   url: https://github.com/TileDB-Inc/{{ name }}/archive/{{ version }}.tar.gz
   sha256: d9d52de7eef25c9e358f0dd6e696dc11a08d5b4d6c4ede88f11afffd32ec31c2
+  patches:
+    - lz4-fix.patch
 
 build:
   number: 2
