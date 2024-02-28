@@ -12,7 +12,7 @@ if "%gcs%"=="gcs_enabled" (
     set TILEDB_GCS=OFF
 )
 
-cmake -G "NMake Makefiles" ^
+cmake -G Ninja ^
       -DCMAKE_INSTALL_PREFIX="%LIBRARY_PREFIX%" ^
       -DCMAKE_BUILD_TYPE=Release ^
       -DTILEDB_WERROR=OFF ^
@@ -29,11 +29,11 @@ cmake -G "NMake Makefiles" ^
       ..
 if errorlevel 1 exit 1
 
-nmake
+cmake --build . -j
 if errorlevel 1 exit 1
 
 pushd "tiledb"
-nmake install
+cmake --build . --target install
 if errorlevel 1 exit 1
 popd
 
