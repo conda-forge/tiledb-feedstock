@@ -11,7 +11,7 @@ channel_targets:
 cxx_compiler:
 - vs2019
 libabseil:
-- '20230802'
+- '20240116'
 libcrc32c:
 - '1.1'
 libcurl:
