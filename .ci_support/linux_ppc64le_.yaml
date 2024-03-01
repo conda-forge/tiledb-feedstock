@@ -1,19 +1,21 @@
-MACOSX_DEPLOYMENT_TARGET:
-- '10.14'
-MACOSX_SDK_VERSION:
-- '10.15'
+aws_crt_cpp:
+- 0.26.2
+aws_sdk_cpp:
+- 1.11.267
 bzip2:
 - '1'
+cdt_name:
+- cos7
 channel_sources:
 - conda-forge
 channel_targets:
 - conda-forge main
 cxx_compiler:
-- clangxx
+- gxx
 cxx_compiler_version:
-- '16'
-gcs:
-- gcs_enabled
+- '12'
+docker_image:
+- quay.io/condaforge/linux-anvil-cos7-x86_64
 libabseil:
 - '20230802'
 libcurl:
@@ -26,15 +28,10 @@ libxml2:
 - '2'
 lz4_c:
 - 1.9.3
-macos_machine:
-- x86_64-apple-darwin13.4.0
 openssl:
 - '3'
 target_platform:
-- osx-64
-zip_keys:
-- - gcs
-  - libcurl
+- linux-ppc64le
 zlib:
 - '1.2'
 zstd:
