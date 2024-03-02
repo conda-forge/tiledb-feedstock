@@ -1,3 +1,7 @@
+aws_crt_cpp:
+- 0.26.2
+aws_sdk_cpp:
+- 1.11.267
 bzip2:
 - '1'
 cdt_name:
@@ -12,16 +16,14 @@ cxx_compiler_version:
 - '12'
 docker_image:
 - quay.io/condaforge/linux-anvil-cos7-x86_64
-gcs:
-- gcs_enabled
 libabseil:
-- '20230802'
+- '20240116'
 libcurl:
 - '8'
 libgoogle_cloud_devel:
-- '2.17'
+- '2.21'
 libgoogle_cloud_storage_devel:
-- '2.17'
+- '2.21'
 libxml2:
 - '2'
 lz4_c:
@@ -30,9 +32,6 @@ openssl:
 - '3'
 target_platform:
 - linux-ppc64le
-zip_keys:
-- - gcs
-  - libcurl
 zlib:
 - '1.2'
 zstd:

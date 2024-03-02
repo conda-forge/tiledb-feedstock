@@ -38,12 +38,6 @@ if [[ $target_platform == linux-aarch64  ]]; then
   export VCPKG_TARGET_TRIPLET="arm64-linux"
 fi
 
-if [[ $gcs == gcs_enabled ]]; then
-  export TILEDB_GCS=ON
-else
-  export TILEDB_GCS=OFF
-fi
-
 print_logs()
 {
   for f in $(find $SRC_DIR/{build,external} -name "*.log");
@@ -65,7 +59,7 @@ if ! cmake ${CMAKE_ARGS} \
   -DSANITIZER=OFF \
   -DCOMPILER_SUPPORTS_AVX2:BOOL=FALSE \
   -DTILEDB_AZURE=ON \
-  -DTILEDB_GCS=${TILEDB_GCS} \
+  -DTILEDB_GCS=ON \
   -DTILEDB_S3=ON \
   -DTILEDB_SERIALIZATION=ON \
   -DTILEDB_LOG_OUTPUT_ON_FAILURE=ON \

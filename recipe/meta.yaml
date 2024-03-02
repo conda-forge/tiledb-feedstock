@@ -1,6 +1,5 @@
 {% set name = "TileDB" %}
 {% set version = "2.20.1" %}
-{% set gcs = gcs or 'gcs_disabled' %}
 
 package:
   name: tiledb
@@ -35,20 +34,20 @@ requirements:
   host:
     - aws-sdk-cpp
     - aws-crt-cpp
-    - azure-core-cpp <1.11
+    - azure-core-cpp
     - azure-storage-common-cpp
     - azure-storage-blobs-cpp
     - bzip2
-    - libabseil                         # [gcs == 'gcs_enabled']
-    - libgoogle-cloud-devel             # [gcs == 'gcs_enabled']
-    - libgoogle-cloud-storage-devel     # [gcs == 'gcs_enabled']
+    - libabseil
+    - libgoogle-cloud-devel
+    - libgoogle-cloud-storage-devel
     - libcurl
     - lz4-c
     - openssl
     - zlib
     - zstd
     # see: https://github.com/conda-forge/google-cloud-cpp-feedstock/pull/108,
-    - libcrc32c  # [gcs == 'gcs_enabled' and win]
+    - libcrc32c  # [win]
 test:
   requires:
     - {{ compiler('cxx') }}
