@@ -9,6 +9,14 @@ source:
   url: https://github.com/TileDB-Inc/{{ name }}/archive/{{ version }}.tar.gz
   sha256: d9d52de7eef25c9e358f0dd6e696dc11a08d5b4d6c4ede88f11afffd32ec31c2
   patches:
+    # This patch removes the find_package(LZ4) call and falls back to the pre-vcpkg
+    # mechanism of using find_library.
+    # The lz4 Conda package does not export CMake targets, and the vcpkg port uses
+    # a custom CMakeLists.txt, dating from before an official one was introduced.
+    # Moreover, the upstream lz4 exports separate static/shared targets and uses
+    # a different casing of the target's name from vcpkg.
+    # After lz4 publishes a unified CMake target with https://github.com/lz4/lz4/pull/1372,
+    # we will have to align Conda, vcpkg and TileDB, and then we can remove this patch.
     - lz4-fix.patch
 
 build:
