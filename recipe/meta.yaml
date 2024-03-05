@@ -10,7 +10,7 @@ source:
   sha256: b6a73b1b7d2ee5305f919d9f94883abc68e8c948257e22ce8771a72a22b46d95
 
 build:
-  number: 0
+  number: 1
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=tiledb
     - {{ pin_subpackage('tiledb', max_pin='x.x') }}
