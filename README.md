@@ -23,14 +23,7 @@ Current build status
 ====================
 
 
-<table><tr>
-    <td>Appveyor</td>
-    <td>
-      <a href="https://ci.appveyor.com/project/conda-forge/tiledb-feedstock/branch/main">
-        <img alt="windows" src="https://img.shields.io/appveyor/ci/conda-forge/tiledb-feedstock/main.svg?label=Windows">
-      </a>
-    </td>
-  </tr>
+<table>
     
   <tr>
     <td>Azure</td>
