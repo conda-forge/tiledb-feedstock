@@ -2,6 +2,9 @@ azure:
   settings_win:
     pool:
       vmImage: windows-2019
+    variables:
+      CONDA_BLD_PATH: C:\\bld\\
+      UPLOAD_TEMP: C:\\tmp
 build_platform:
   linux_aarch64: linux_64
   linux_ppc64le: linux_64
