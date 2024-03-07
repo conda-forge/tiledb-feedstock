@@ -13,8 +13,8 @@ jobs:
         UPLOAD_PACKAGES: 'True'
   timeoutInMinutes: 360
   variables:
-    CONDA_BLD_PATH: D:\\bld\\
-    UPLOAD_TEMP: D:\\tmp
+    CONDA_BLD_PATH: C:\\bld\\
+    UPLOAD_TEMP: C:\\tmp
 
   steps:
 
