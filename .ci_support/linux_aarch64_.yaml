@@ -36,6 +36,8 @@ lz4_c:
 - 1.9.3
 openssl:
 - '3'
+spdlog:
+- '1.12'
 target_platform:
 - linux-aarch64
 zlib:
