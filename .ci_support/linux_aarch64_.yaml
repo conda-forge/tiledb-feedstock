@@ -19,7 +19,7 @@ docker_image:
 google_cloud_cpp:
 - '2.21'
 libabseil:
-- '20230802'
+- '20240116'
 libcurl:
 - '8'
 libxml2:
