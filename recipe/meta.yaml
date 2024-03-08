@@ -24,7 +24,7 @@ requirements:
     - {{ compiler('cxx') }}
     - file  # [arm64]
   host:
-    - azure-core-cp
+    - azure-core-cpp
     - azure-storage-common-cpp
     - azure-storage-blobs-cpp
     - bzip2
