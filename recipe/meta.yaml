@@ -95,6 +95,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - teo-tsirpanis
     - jdblischak
     - KiterLuc
     - akrherz
