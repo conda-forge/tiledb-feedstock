@@ -52,6 +52,7 @@ requirements:
     - libcurl
     - lz4-c
     - openssl
+    - spdlog
     - zlib
     - zstd
     # see: https://github.com/conda-forge/google-cloud-cpp-feedstock/pull/108,
