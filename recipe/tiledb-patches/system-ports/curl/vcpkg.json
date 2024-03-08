@@ -1,0 +1,66 @@
+{
+  "name": "curl",
+  "version-string": "system",
+  "features": {
+    "brotli": {
+      "description": "brotli support (brotli)"
+    },
+    "c-ares": {
+      "description": "c-ares support"
+    },
+    "http2": {
+      "description": "HTTP2 support"
+    },
+    "idn": {
+      "description": "Default IDN support"
+    },
+    "idn2": {
+      "description": "idn2 support (libidn2)"
+    },
+    "mbedtls": {
+      "description": "SSL support (mbedTLS)"
+    },
+    "non-http": {
+      "description": "Enables protocols beyond HTTP/HTTPS/HTTP2"
+    },
+    "openssl": {
+      "description": "SSL support (OpenSSL)"
+    },
+    "schannel": {
+      "description": "SSL support (Secure Channel)"
+    },
+    "sectransp": {
+      "description": "SSL support (sectransp)"
+    },
+    "ssh": {
+      "description": "SSH support via libssh2"
+    },
+    "ssl": {
+      "description": "Default SSL backend"
+    },
+    "sspi": {
+      "description": "SSPI support"
+    },
+    "tool": {
+      "description": "Builds curl executable"
+    },
+    "websockets": {
+      "description": "WebSocket support (experimental)"
+    },
+    "winidn": {
+      "description": "WinIDN support"
+    },
+    "winldap": {
+      "description": "LDAP support (WinLDAP). This feature does not include LDAPS support."
+    },
+    "winssl": {
+      "description": "Legacy name for schannel"
+    },
+    "wolfssl": {
+      "description": "SSL support (wolfSSL)"
+    },
+    "zstd": {
+      "description": "ZStandard support (zstd)"
+    }
+  }
+}

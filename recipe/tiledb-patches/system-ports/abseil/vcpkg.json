@@ -1,0 +1,9 @@
+{
+  "name": "abseil",
+  "version-string": "system",
+  "features": {
+    "cxx17": {
+      "description": "Enable compiler C++17."
+    }
+  }
+}

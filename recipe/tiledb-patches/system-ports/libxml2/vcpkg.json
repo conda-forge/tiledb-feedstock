@@ -1,0 +1,27 @@
+{
+  "name": "libxml2",
+  "version-string": "system",
+  "features": {
+    "ftp": {
+      "description": "Add the FTP support"
+    },
+    "http": {
+      "description": "Add the HTTP support"
+    },
+    "iconv": {
+      "description": "Add ICONV support"
+    },
+    "legacy": {
+      "description": "Add deprecated APIs for compatibility"
+    },
+    "lzma": {
+      "description": "Use LZMA"
+    },
+    "tools": {
+      "description": "Build tools"
+    },
+    "zlib": {
+      "description": "Use ZLib"
+    }
+  }
+}
