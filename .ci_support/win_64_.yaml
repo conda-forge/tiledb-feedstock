@@ -9,7 +9,7 @@ cxx_compiler:
 google_cloud_cpp:
 - '2.21'
 libabseil:
-- '20230802'
+- '20240116'
 libcrc32c:
 - '1.1'
 libcurl:
