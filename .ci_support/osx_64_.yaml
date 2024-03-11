@@ -18,6 +18,8 @@ cxx_compiler:
 - clangxx
 cxx_compiler_version:
 - '16'
+fmt:
+- '10'
 libabseil:
 - '20240116'
 libcurl:
