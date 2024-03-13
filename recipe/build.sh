@@ -11,6 +11,11 @@ export CXX=$RECIPE_DIR/cxx_wrap.sh
 export CC=$RECIPE_DIR/cc_wrap.sh
 export CMAKE_OSX_DEPLOYMENT_TARGET=${MACOSX_DEPLOYMENT_TARGET}
 
+# https://conda-forge.org/docs/maintainer/knowledge_base/#newer-c-features-with-old-sdk
+if [[ $target_platform == osx-64  ]]; then
+  CXXFLAGS="${CXXFLAGS} -D_LIBCPP_DISABLE_AVAILABILITY"
+fi
+
 CURL_LIBS_APPEND=`$PREFIX/bin/curl-config --libs`
 export LDFLAGS="${LDFLAGS} ${CURL_LIBS_APPEND}"
 
