@@ -1,5 +1,5 @@
 {% set name = "TileDB" %}
-{% set version = "2.21.0" %}
+{% set version = "2.21.1" %}
 
 package:
   name: tiledb
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/TileDB-Inc/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 3e95e155b1dca1add5c79b38623959cce4b547d4fed9981940ac871aaa7a8e70
+  sha256: 24d50ebd5ac211d92a328be3f2988aed5c91c82123583ad6833e2ab7b6bdb454
   patches:
     # This patch removes the find_package(LZ4) call and falls back to the pre-vcpkg
     # mechanism of using find_library.
