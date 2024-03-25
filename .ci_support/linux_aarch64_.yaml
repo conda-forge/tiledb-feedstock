@@ -6,6 +6,10 @@ aws_sdk_cpp:
 - 1.11.267
 bzip2:
 - '1'
+c_stdlib:
+- sysroot
+c_stdlib_version:
+- '2.17'
 cdt_arch:
 - aarch64
 cdt_name:
@@ -42,6 +46,9 @@ spdlog:
 - '1.12'
 target_platform:
 - linux-aarch64
+zip_keys:
+- - c_stdlib_version
+  - cdt_name
 zlib:
 - '1.2'
 zstd:
