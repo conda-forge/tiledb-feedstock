@@ -15,3 +15,6 @@ provider:
 test: native_and_emulated
 travis:
   osx_image: xcode6.4
+bot:
+  abi_migration_branches:
+    - 2.20.x
