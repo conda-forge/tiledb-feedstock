@@ -6,6 +6,10 @@ aws_sdk_cpp:
 - 1.11.267
 bzip2:
 - '1'
+c_stdlib:
+- macosx_deployment_target
+c_stdlib_version:
+- '10.13'
 channel_sources:
 - conda-forge
 channel_targets:
@@ -38,6 +42,9 @@ spdlog:
 - '1.12'
 target_platform:
 - osx-64
+zip_keys:
+- - c_stdlib_version
+  - MACOSX_DEPLOYMENT_TARGET
 zlib:
 - '1.2'
 zstd:
