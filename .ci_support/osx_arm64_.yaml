@@ -6,6 +6,10 @@ aws_sdk_cpp:
 - 1.11.267
 bzip2:
 - '1'
+c_stdlib:
+- macosx_deployment_target
+c_stdlib_version:
+- '11.0'
 channel_sources:
 - conda-forge
 channel_targets:
