@@ -51,6 +51,7 @@ requirements:
     - libgoogle-cloud-devel
     - libgoogle-cloud-storage-devel
     - libcurl
+    - libwebp-base
     - lz4-c
     - openssl
     - spdlog
