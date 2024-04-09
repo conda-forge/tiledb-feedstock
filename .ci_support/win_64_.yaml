@@ -1,11 +1,13 @@
 aws_crt_cpp:
-- 0.26.4
+- 0.26.6
 aws_sdk_cpp:
 - 1.11.267
 bzip2:
 - '1'
 c_stdlib:
 - vs
+c_stdlib_version:
+- '2019'
 channel_sources:
 - conda-forge
 channel_targets:
