@@ -36,6 +36,8 @@ libgoogle_cloud_devel:
 - '2.22'
 libgoogle_cloud_storage_devel:
 - '2.22'
+libwebp_base:
+- '1'
 libxml2:
 - '2'
 lz4_c:

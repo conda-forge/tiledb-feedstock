@@ -1,0 +1,57 @@
+{
+  "name": "libwebp",
+  "version-string": "system",
+  "features": {
+    "all": {
+      "description": "enable all features except for swap16bitcsp"
+    },
+    "anim": {
+      "description": "Build animation utilities."
+    },
+    "cwebp": {
+      "description": "Build the cwebp command line tool."
+    },
+    "dwebp": {
+      "description": "Build the dwebp command line tool."
+    },
+    "extras": {
+      "description": "Build extras. (Doesn't include vwebp-sdl.)"
+    },
+    "gif2webp": {
+      "description": "Build the gif2webp conversion tool."
+    },
+    "img2webp": {
+      "description": "Build the img2webp animation tool."
+    },
+    "info": {
+      "description": "Build the webpinfo command line tool."
+    },
+    "libbwebpmux": {
+      "description": "Obsolete, use feature libwebpmux instead."
+    },
+    "libwebpmux": {
+      "description": "Build the libwebpmux library"
+    },
+    "mux": {
+      "description": "Build the webpmux command line tool."
+    },
+    "nearlossless": {
+      "description": "Enable near-lossless encoding"
+    },
+    "simd": {
+      "description": "Enable any SIMD optimization."
+    },
+    "swap16bitcsp": {
+      "description": "Enable byte swap for 16 bit colorspaces."
+    },
+    "unicode": {
+      "description": "Build Unicode executables. (Adds definition UNICODE and _UNICODE)"
+    },
+    "vwebp": {
+      "description": "Build the vwebp viewer tool."
+    },
+    "vwebp-sdl": {
+      "description": "Build the vwebp viewer tool for SDL."
+    }
+  }
+}
