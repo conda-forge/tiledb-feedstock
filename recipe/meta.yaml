@@ -28,7 +28,7 @@ build:
 requirements:
   build:
     - make  # [unix]
-    - cmake <3.29.1
+    - cmake !=3.29.1
     - ninja  # [win]
     - pkg-config  # [not win]
     - {{ compiler('cxx') }}
