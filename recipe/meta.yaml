@@ -44,6 +44,7 @@ requirements:
     - aws-sdk-cpp
     - aws-crt-cpp
     - azure-core-cpp
+    - azure-identity-cpp
     - azure-storage-common-cpp
     - azure-storage-blobs-cpp
     - bzip2
