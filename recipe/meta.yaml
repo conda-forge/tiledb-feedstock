@@ -1,5 +1,5 @@
 {% set name = "TileDB" %}
-{% set version = "2.21.2" %}
+{% set version = "2.22.0" %}
 
 package:
   name: tiledb
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/TileDB-Inc/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 9e4c984f031fc0f3e2744804a9ca3bace12d3dfdce88eca088d3e7be950e7b96
+  sha256: 55848552a169a029d2b73e14f4efc846117f41e42f742402f774290d12f410be
   patches:
     # This patch removes the find_package(LZ4) call and falls back to the pre-vcpkg
     # mechanism of using find_library.
@@ -20,7 +20,7 @@ source:
     - lz4-fix.patch
 
 build:
-  number: 1
+  number: 0
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=tiledb
     - {{ pin_subpackage('tiledb', max_pin='x.x') }}
