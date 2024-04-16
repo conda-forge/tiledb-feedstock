@@ -1,0 +1,9 @@
+c_compiler:    # [win]
+  - vs2022       # [win]
+cxx_compiler:  # [win]
+  - vs2022       # [win]
+# We should be able to remove c_stdlib_version in the future once the mechanics
+# of this new pin has been fully worked out in the conda-forge ecosystem and
+# tooling
+c_stdlib_version:    # [win]
+  - 2022             # [win]
