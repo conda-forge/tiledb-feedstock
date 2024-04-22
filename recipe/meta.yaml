@@ -1,6 +1,6 @@
 {% set name = "TileDB" %}
-{% set version = "2.18.4" %}
-{% set gcs = gcs or 'gcs_disabled' %}
+{% set version = "2.18.5" %}
+{% set gcs = 'gcs_disabled' %}
 
 package:
   name: tiledb
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/TileDB-Inc/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 95b2278389ee00c2a90055fa748fb4a487a23f3d8680afd69b92a018d8e89aee
+  sha256: 3428d58ec40717dc796ca8d5206a6e881bd60786939ee709f0874a305fad11fe
 
 build:
   number: 0
