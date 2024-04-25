@@ -33,7 +33,7 @@ lz4_c:
 openssl:
 - '3'
 spdlog:
-- '1.12'
+- '1.13'
 target_platform:
 - win-64
 zlib:
