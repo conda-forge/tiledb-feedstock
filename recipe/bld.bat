@@ -9,6 +9,7 @@ pushd "%SRC_DIR%"\build
 cmake -G Ninja ^
       -DCMAKE_INSTALL_PREFIX="%LIBRARY_PREFIX%" ^
       -DCMAKE_BUILD_TYPE=Release ^
+      -DTILEDB_CMAKE_IDE=ON ^
       -DTILEDB_WERROR=OFF ^
       -DTILEDB_TESTS=OFF ^
       -DTILEDB_AZURE=ON ^
@@ -23,12 +24,6 @@ cmake -G Ninja ^
       ..
 if errorlevel 1 exit 1
 
-cmake --build . -j
+cmake --build . -j --target install
 if errorlevel 1 exit 1
-
-pushd "tiledb"
-cmake --build . --target install
-if errorlevel 1 exit 1
-popd
-
 popd

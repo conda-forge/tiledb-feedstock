@@ -57,6 +57,7 @@ mkdir build && cd build
 if ! cmake ${CMAKE_ARGS} \
   -DCMAKE_INSTALL_PREFIX="${PREFIX}" \
   -DCMAKE_BUILD_TYPE=Release \
+  -DTILEDB_CMAKE_IDE=ON \
   -DTILEDB_WERROR=OFF \
   -DTILEDB_TESTS=OFF \
   -DTILEDB_INSTALL_LIBDIR=lib \
@@ -75,12 +76,7 @@ then
   print_logs
   exit 1
 fi
-if ! make -j ${CPU_COUNT}
-then
-  print_logs
-  exit 1
-fi
-if ! make -C tiledb install
+if ! make -j ${CPU_COUNT} install
 then
   print_logs
   exit 1
