@@ -53,6 +53,9 @@ print_logs()
   done;
 }
 
+# We use -DTILEDB_CMAKE_IDE=ON to disable the superbuild, because
+# -DTILEDB_SUPERBUILD=OFF also disables auto-downloading vcpkg.
+
 mkdir build && cd build
 if ! cmake ${CMAKE_ARGS} \
   -DCMAKE_INSTALL_PREFIX="${PREFIX}" \
