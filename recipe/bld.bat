@@ -6,9 +6,13 @@ xcopy /Y /S /I "%RECIPE_DIR%\tiledb-patches" "%SRC_DIR%"
 mkdir "%SRC_DIR%"\build
 pushd "%SRC_DIR%"\build
 
+REM We use -DTILEDB_CMAKE_IDE=ON to disable the superbuild, because
+REM -DTILEDB_SUPERBUILD=OFF also disables auto-downloading vcpkg.
+
 cmake -G Ninja ^
       -DCMAKE_INSTALL_PREFIX="%LIBRARY_PREFIX%" ^
       -DCMAKE_BUILD_TYPE=Release ^
+      -DTILEDB_CMAKE_IDE=ON ^
       -DTILEDB_WERROR=OFF ^
       -DTILEDB_TESTS=OFF ^
       -DTILEDB_AZURE=ON ^
@@ -23,12 +27,6 @@ cmake -G Ninja ^
       ..
 if errorlevel 1 exit 1
 
-cmake --build . -j
+cmake --build . -j --target install
 if errorlevel 1 exit 1
-
-pushd "tiledb"
-cmake --build . --target install
-if errorlevel 1 exit 1
-popd
-
 popd
