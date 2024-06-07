@@ -22,7 +22,7 @@ source:
     - pr-4995.patch
 
 build:
-  number: 2
+  number: 3
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=tiledb
     - {{ pin_subpackage('tiledb', max_pin='x.x') }}
