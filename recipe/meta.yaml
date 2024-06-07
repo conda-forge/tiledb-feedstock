@@ -1,5 +1,5 @@
 {% set name = "TileDB" %}
-{% set version = "2.23.0" %}
+{% set version = "2.24.0" %}
 
 package:
   name: tiledb
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/TileDB-Inc/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 3a7db2094eb5f01d1fdd8c0e74912cbf78f9f7658f520e84f2c6f647f404ba8c
+  sha256: 21cd9ebe25ab0999927f375e7e92169e35e64dcceb7d17c91d0f310f9246ae1b
   patches:
     # This patch removes the find_package(LZ4) call and falls back to the pre-vcpkg
     # mechanism of using find_library.
@@ -18,11 +18,9 @@ source:
     # After lz4 publishes a unified CMake target with https://github.com/lz4/lz4/pull/1372,
     # we will have to align Conda, vcpkg and TileDB, and then we can remove this patch.
     - lz4-fix.patch
-    # https://github.com/TileDB-Inc/TileDB/pull/4995
-    - pr-4995.patch
 
 build:
-  number: 3
+  number: 0
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=tiledb
     - {{ pin_subpackage('tiledb', max_pin='x.x') }}
