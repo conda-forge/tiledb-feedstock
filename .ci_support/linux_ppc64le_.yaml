@@ -37,9 +37,9 @@ libabseil:
 libcurl:
 - '8'
 libgoogle_cloud_devel:
-- '2.25'
+- '2.26'
 libgoogle_cloud_storage_devel:
-- '2.25'
+- '2.26'
 libwebp_base:
 - '1'
 libxml2:
