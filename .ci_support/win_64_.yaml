@@ -23,7 +23,7 @@ channel_targets:
 cxx_compiler:
 - vs2022
 fmt:
-- '10'
+- '11'
 libabseil:
 - '20240116'
 libcrc32c:
