@@ -1,5 +1,5 @@
 aws_crt_cpp:
-- 0.28.0
+- 0.28.1
 aws_sdk_cpp:
 - 1.11.379
 azure_core_cpp:
@@ -22,6 +22,8 @@ channel_targets:
 - conda-forge main
 cxx_compiler:
 - vs2022
+cxx_compiler_version:
+- '19.40'
 fmt:
 - '11'
 libabseil:
