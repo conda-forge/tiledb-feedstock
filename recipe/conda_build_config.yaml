@@ -2,9 +2,6 @@ c_compiler:    # [win]
   - vs2022       # [win]
 cxx_compiler:  # [win]
   - vs2022       # [win]
-# Temporary: Pin win build to Visual Studio 17.10
-cxx_compiler_version:  # [win]
-  - 19.40          # [win]
 # We should be able to remove c_stdlib_version in the future once the mechanics
 # of this new pin has been fully worked out in the conda-forge ecosystem and
 # tooling
