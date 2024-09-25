@@ -25,7 +25,7 @@ cxx_compiler:
 fmt:
 - '11'
 libabseil:
-- '20240116'
+- '20240722'
 libcrc32c:
 - '1.1'
 libcurl:
