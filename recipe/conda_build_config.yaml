@@ -7,3 +7,7 @@ cxx_compiler:  # [win]
 # tooling
 c_stdlib_version:    # [win]
   - 2022             # [win]
+# Delay clang 18 update for osx-arm64
+# https://github.com/conda-forge/tiledb-feedstock/pull/367
+cxx_compiler_version:  # [osx and arm64]
+  - 17                 # [osx and arm64]
