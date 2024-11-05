@@ -29,7 +29,7 @@ curl:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '18'
+- '17'
 fmt:
 - '11'
 libabseil:
