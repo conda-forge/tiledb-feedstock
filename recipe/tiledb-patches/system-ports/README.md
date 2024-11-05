@@ -20,7 +20,7 @@ The `vcpkg.json` should contain:
 
 1. A `name` field with a value equal to the port's name.
 2. A `version-string` field with a value equal to `system`.
-3. A `features` field with a list of the port's features that TileDB uses, with each feature containing only the `description` field.
+3. A `features` field with a list of the port's features that TileDB uses, with each feature containing only the `description` field. You can start by copy-pasting the `features` from the `vkpkg.json` file in the [ports subdirectory](https://github.com/microsoft/vcpkg/tree/master/ports) of the vcpkg repository.
 
 To show an example, suppose TileDB started depending on package `foo`, that also exists in conda-forge. This is the `vcpkg.json` file as exists in the vcpkg repo:
 
