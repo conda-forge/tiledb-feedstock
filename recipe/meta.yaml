@@ -38,7 +38,7 @@ requirements:
     - azure-storage-common-cpp
     - azure-storage-blobs-cpp
     - bzip2
-    - capnproto
+    - capnproto 1.0.1
     - fmt
     - libabseil
     - libgoogle-cloud-devel
