@@ -30,6 +30,7 @@ requirements:
     - tar  # [not win]
     # These are declared as vcpkg dependencies by TileDB but are not actually used.
     - libxml2  # [not win]
+    - capnproto
   host:
     - aws-sdk-cpp
     - aws-crt-cpp
@@ -38,7 +39,7 @@ requirements:
     - azure-storage-common-cpp
     - azure-storage-blobs-cpp
     - bzip2
-    - capnproto 1.0.1
+    - capnproto
     - fmt
     - libabseil
     - libgoogle-cloud-devel
