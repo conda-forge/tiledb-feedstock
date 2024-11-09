@@ -20,7 +20,7 @@ source:
     - lz4-fix.patch
 
 build:
-  number: 21
+  number: 22
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=tiledb
     - {{ pin_subpackage('tiledb', max_pin='x.x') }}
