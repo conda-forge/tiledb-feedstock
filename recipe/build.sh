@@ -53,6 +53,13 @@ print_logs()
   done;
 }
 
+# Regenerate the capnp serialization files with the version installed in Conda.
+# This allows updating capnproto independently of upstream tiledb.
+if ! $BUILD_PREFIX/bin/capnp compile -I $BUILD_PREFIX/include -oc++:$SRC_DIR/tiledb/sm/serialization $SRC_DIR/tiledb/sm/serialization/tiledb-rest.capnp --src-prefix=$SRC_DIR/tiledb/sm/serialization
+then
+  exit 1
+fi
+
 # We use -DTILEDB_CMAKE_IDE=ON to disable the superbuild, because
 # -DTILEDB_SUPERBUILD=OFF also disables auto-downloading vcpkg.
 

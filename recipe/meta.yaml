@@ -10,7 +10,7 @@ source:
   sha256: 255218aebd3ef5af4b8deb3be58f877fda335d5abc1c097a33f6741bf259a68d
 
 build:
-  number: 7
+  number: 8
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=tiledb
     - {{ pin_subpackage('tiledb', max_pin='x.x') }}
@@ -30,6 +30,7 @@ requirements:
     - tar  # [not win]
     # These are declared as vcpkg dependencies by TileDB but are not actually used.
     - libxml2  # [not win]
+    - capnproto
   host:
     - aws-sdk-cpp
     - aws-crt-cpp
@@ -38,6 +39,7 @@ requirements:
     - azure-storage-common-cpp
     - azure-storage-blobs-cpp
     - bzip2
+    - capnproto
     - fmt
     - libabseil
     - libgoogle-cloud-devel

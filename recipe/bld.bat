@@ -3,6 +3,11 @@ setlocal EnableDelayedExpansion
 REM Copy tiledb-patches to the source directory
 xcopy /Y /S /I "%RECIPE_DIR%\tiledb-patches" "%SRC_DIR%"
 
+REM Regenerate the capnp serialization files with the version installed in Conda.
+REM This allows updating capnproto independently of upstream tiledb.
+%BUILD_PREFIX%\Library\bin\capnp compile -I %BUILD_PREFIX%\Library\include -oc++:%SRC_DIR%\tiledb\sm\serialization %SRC_DIR%\tiledb\sm\serialization\tiledb-rest.capnp --src-prefix=%SRC_DIR%\tiledb\sm\serialization
+if errorlevel 1 exit 1
+
 mkdir "%SRC_DIR%"\build
 pushd "%SRC_DIR%"\build
 

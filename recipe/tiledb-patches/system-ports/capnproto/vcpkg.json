@@ -1,0 +1,9 @@
+{
+  "name": "capnproto",
+  "version-string": "system",
+  "features": {
+    "openssl": {
+      "description": "Build libkj-tls by linking against OpenSSL."
+    }
+  }
+}
