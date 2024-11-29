@@ -1,5 +1,5 @@
 aws_crt_cpp:
-- 0.29.5
+- 0.29.6
 aws_sdk_cpp:
 - 1.11.449
 azure_core_cpp:
@@ -46,6 +46,8 @@ spdlog:
 - '1.14'
 target_platform:
 - win-64
+tiledb:
+- '2.26'
 zlib:
 - '1'
 zstd:
