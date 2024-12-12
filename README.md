@@ -215,6 +215,3 @@ Feedstock Maintainers
 * [@teo-tsirpanis](https://github.com/teo-tsirpanis/)
 * [@xylar](https://github.com/xylar/)
 
-
-<!-- dummy commit to enable rerendering -->
-
