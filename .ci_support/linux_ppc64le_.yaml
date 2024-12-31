@@ -51,11 +51,11 @@ lz4_c:
 openssl:
 - '3'
 spdlog:
-- '1.14'
+- '1.15'
 target_platform:
 - linux-ppc64le
 tiledb:
-- '2.26'
+- '2.27'
 zlib:
 - '1'
 zstd:
