@@ -33,9 +33,9 @@ libcrc32c:
 libcurl:
 - '8'
 libgoogle_cloud_devel:
-- '2.32'
+- '2.33'
 libgoogle_cloud_storage_devel:
-- '2.32'
+- '2.33'
 libwebp_base:
 - '1'
 lz4_c:
@@ -47,7 +47,7 @@ spdlog:
 target_platform:
 - win-64
 tiledb:
-- '2.26'
+- '2.27'
 zlib:
 - '1'
 zstd:
