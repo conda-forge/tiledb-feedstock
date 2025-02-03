@@ -14,6 +14,8 @@ build:
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=tiledb
     - {{ pin_subpackage('tiledb', max_pin='x.x') }}
+  error_overdepending: true
+  error_overlinking: true
 
 requirements:
   build:
