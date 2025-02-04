@@ -34,17 +34,17 @@ requirements:
     - libxml2  # [not win]
     - capnproto
   host:
-    - aws-c-auth
-    - aws-c-cal
-    - aws-c-common
-    - aws-c-compression
-    - aws-c-event-stream
-    - aws-c-http
-    - aws-c-io
-    - aws-c-mqtt
-    - aws-c-s3
-    - aws-c-sdkutils
-    - aws-checksums
+    - aws-c-auth  # [linux64]
+    - aws-c-cal  # [linux64]
+    - aws-c-common  # [linux64]
+    - aws-c-compression  # [linux64]
+    - aws-c-event-stream  # [linux64]
+    - aws-c-http  # [linux64]
+    - aws-c-io  # [linux64]
+    - aws-c-mqtt  # [linux64]
+    - aws-c-s3  # [linux64]
+    - aws-c-sdkutils  # [linux64]
+    - aws-checksums  # [linux64]
     - aws-sdk-cpp
     - aws-crt-cpp
     - azure-core-cpp
@@ -61,12 +61,12 @@ requirements:
     - libwebp-base
     - lz4-c
     - openssl
-    - s2n
+    - s2n  # [linux64]
     - spdlog
     - zlib
     - zstd
     # see: https://github.com/conda-forge/google-cloud-cpp-feedstock/pull/108,
-    - libcrc32c
+    - libcrc32c  # [linux64 or win]
 test:
   requires:
     - {{ compiler('cxx') }}
