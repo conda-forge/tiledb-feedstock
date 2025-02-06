@@ -36,7 +36,7 @@ requirements:
   host:
     - aws-c-auth  # [linux64]
     - aws-c-cal  # [linux64]
-    - aws-c-common  # [linux64]
+    - aws-c-common
     - aws-c-compression  # [linux64]
     - aws-c-event-stream  # [linux64]
     - aws-c-http  # [linux64]
@@ -49,18 +49,18 @@ requirements:
     - aws-crt-cpp
     - azure-core-cpp
     - azure-identity-cpp
-    - azure-storage-common-cpp
+    - azure-storage-common-cpp  # [linux64]
     - azure-storage-blobs-cpp
     - bzip2
-    - capnproto
+    - capnproto  # [not win]
     - fmt
-    - libabseil
-    - libgoogle-cloud-devel
-    - libgoogle-cloud-storage-devel
+    - libabseil  # [linux64 or win]
+    - libgoogle-cloud-devel  # [not win]
+    - libgoogle-cloud-storage-devel  # [not win]
     - libcurl
     - libwebp-base
     - lz4-c
-    - openssl
+    - openssl  # [not win]
     - s2n  # [linux64]
     - spdlog
     - zlib
