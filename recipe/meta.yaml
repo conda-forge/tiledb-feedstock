@@ -56,7 +56,7 @@ requirements:
     - fmt
     - libabseil  # [linux64 or win]
     - libgoogle-cloud-devel  # [not win]
-    - libgoogle-cloud-storage-devel  # [not win]
+    - libgoogle-cloud-storage-devel
     - libcurl
     - libwebp-base
     - lz4-c
