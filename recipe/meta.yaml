@@ -91,7 +91,7 @@ test:
     - if exist %LIBRARY_BIN%\\libcurl.dll (exit 0) else (exit 1)  # [win]
 
     # Report dynamic linking
-    - ldd ${PREFIX}/lib/libtiledb.so  # [linux]
+    - ldd ${PREFIX}/lib/libtiledb.so  # [linux64]
     - otool -L ${PREFIX}/lib/libtiledb.dylib  # [osx]
 
 about:
