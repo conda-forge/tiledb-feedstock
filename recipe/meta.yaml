@@ -8,9 +8,11 @@ package:
 source:
   url: https://github.com/TileDB-Inc/{{ name }}/archive/{{ version }}.tar.gz
   sha256: 860097e8060cec16eb86cfd94794ea38d42b2d757fba9a690ac9778c0def77e2
+  patches:
+    - add-missing-headers.patch
 
 build:
-  number: 7
+  number: 8
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=tiledb
     - {{ pin_subpackage('tiledb', max_pin='x.x') }}
