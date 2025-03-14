@@ -3,7 +3,7 @@ MACOSX_DEPLOYMENT_TARGET:
 MACOSX_SDK_VERSION:
 - '11.0'
 aws_crt_cpp:
-- 0.29.9
+- 0.31.0
 aws_sdk_cpp:
 - 1.11.489
 azure_core_cpp:
@@ -35,7 +35,7 @@ cxx_compiler_version:
 fmt:
 - '11'
 libabseil:
-- '20240722'
+- '20250127'
 libcurl:
 - '8'
 libgoogle_cloud_devel:
