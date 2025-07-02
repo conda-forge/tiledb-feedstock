@@ -14,8 +14,6 @@ bzip2:
 - '1'
 c_stdlib:
 - vs
-c_stdlib_version:
-- '2022'
 capnproto:
 - 1.2.0
 channel_sources:
