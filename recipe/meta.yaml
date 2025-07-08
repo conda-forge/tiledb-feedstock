@@ -8,6 +8,8 @@ package:
 source:
   url: https://github.com/TileDB-Inc/{{ name }}/archive/{{ version }}.tar.gz
   sha256: de731cd0c8e82fe8cfca084b937dc0df41e451c8eb93071e4cc5aba7bbef854e
+  patches:
+    - azure-fix.patch
 
 build:
   number: 8
