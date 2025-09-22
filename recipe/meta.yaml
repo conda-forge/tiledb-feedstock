@@ -25,7 +25,6 @@ requirements:
     - pkg-config  # [not win]
     - {{ compiler('cxx') }}
     - {{ stdlib("c") }}
-    - file  # [arm64]
     - zip  # [not win]
     - unzip  # [not win]
     - curl  # [not win]
