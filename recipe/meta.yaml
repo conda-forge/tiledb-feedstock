@@ -39,6 +39,7 @@ requirements:
     - azure-identity-cpp
     - azure-storage-common-cpp
     - azure-storage-blobs-cpp
+    - azure-storage-files-datalake-cpp
     - bzip2
     - capnproto
     - fmt
