@@ -1,5 +1,5 @@
 {% set name = "TileDB" %}
-{% set version = "2.29.1" %}
+{% set version = "2.29.2" %}
 
 package:
   name: tiledb
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/TileDB-Inc/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: e507b6edf2a3893038ae92c74b4756561f3c11a03c6c311c7ae76d40f924cc05
+  sha256: 44fd4c6c25938a123edc711f082a1c3e632a9f8365e64fe745bbf1e782d671d4
   patches:
     - azure-fix.patch
 
 build:
-  number: 3
+  number: 0
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=tiledb
     - {{ pin_subpackage('tiledb', max_pin='x.x') }}
