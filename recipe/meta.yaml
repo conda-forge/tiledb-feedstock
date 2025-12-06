@@ -1,5 +1,5 @@
 {% set name = "TileDB" %}
-{% set version = "2.29.2" %}
+{% set version = "2.30.0" %}
 
 package:
   name: tiledb
@@ -7,12 +7,10 @@ package:
 
 source:
   url: https://github.com/TileDB-Inc/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 44fd4c6c25938a123edc711f082a1c3e632a9f8365e64fe745bbf1e782d671d4
-  patches:
-    - azure-fix.patch
+  sha256: c5f94da6de0e0f93925f7ad107bd80fef0615f9b3d111a5bae245f75b1fcc173
 
 build:
-  number: 1
+  number: 0
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=tiledb
     - {{ pin_subpackage('tiledb', max_pin='x.x') }}
@@ -29,9 +27,10 @@ requirements:
     - unzip  # [not win]
     - curl  # [not win]
     - tar  # [not win]
-    # These are declared as vcpkg dependencies by TileDB but are not actually used.
-    - libxml2  # [not win]
+    # We need capnproto at build time to regenerate the serialization code.
     - capnproto
+    # Header-only library.
+    - nlohmann_json
   host:
     - aws-sdk-cpp
     - aws-crt-cpp
@@ -41,6 +40,7 @@ requirements:
     - azure-storage-blobs-cpp
     - azure-storage-files-datalake-cpp
     - bzip2
+    - c-blosc2
     - capnproto
     - fmt
     - libabseil
