@@ -1,0 +1,12 @@
+{
+  "name": "blosc2",
+  "version-string": "system",
+  "features": {
+    "zlib": {
+      "description": "Support zlib compression"
+    },
+    "zstd": {
+      "description": "Support zstd compression"
+    }
+  }
+}
