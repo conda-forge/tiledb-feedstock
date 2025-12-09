@@ -1,5 +1,5 @@
 aws_crt_cpp:
-- 0.35.2
+- 0.35.4
 aws_sdk_cpp:
 - 1.11.606
 azure_core_cpp:
@@ -14,6 +14,8 @@ azure_storage_files_datalake_cpp:
 - 12.13.0
 bzip2:
 - '1'
+c_blosc2:
+- '2.22'
 c_stdlib:
 - vs
 capnproto:
