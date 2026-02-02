@@ -19,7 +19,7 @@ azure_storage_files_datalake_cpp:
 bzip2:
 - '1'
 c_blosc2:
-- '2.22'
+- '2.23'
 c_stdlib:
 - macosx_deployment_target
 c_stdlib_version:
