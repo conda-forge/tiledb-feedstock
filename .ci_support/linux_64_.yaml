@@ -37,7 +37,7 @@ docker_image:
 fmt:
 - '12.1'
 libabseil:
-- '20250512'
+- '20260107'
 libcurl:
 - '8'
 libgoogle_cloud_devel:
