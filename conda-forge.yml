@@ -10,11 +10,11 @@ github:
   tooling_branch_name: main
 provider:
   linux_64: azure
-  osx_64: azure
-  win_64: azure
   linux_aarch64: azure
   linux_ppc64le: azure
+  osx_64: azure
   win: azure
+  win_64: azure
 test: native_and_emulated
 travis:
   osx_image: xcode6.4
