@@ -35,9 +35,9 @@ libcrc32c:
 libcurl:
 - '8'
 libgoogle_cloud_devel:
-- '3.5'
+- '3.6'
 libgoogle_cloud_storage_devel:
-- '3.5'
+- '3.6'
 libwebp_base:
 - '1'
 lz4_c:
