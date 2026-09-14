@@ -10,7 +10,7 @@ source:
   sha256: 36381f9eaa2a6defc8990aa1a95d1f0e87971748a50bf6fb705bf032ac7384cf
 
 build:
-  number: 21
+  number: 22
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=tiledb
     - {{ pin_subpackage('tiledb', max_pin='x.x') }}
@@ -67,16 +67,16 @@ test:
     - test -e $PREFIX/include/tiledb/tiledb  # [not win]
     - test -e $PREFIX/lib/libtiledb$SHLIB_EXT  # [not win]
 
-    - if exist %LIBRARY_INC%\\tiledb\\tiledb (exit 0) else (exit 1)  # [win]
-    - if exist %LIBRARY_INC%\\tiledb\\tiledb.h (exit 0) else (exit 1)  # [win]
-    - if exist %LIBRARY_LIB%\\tiledb.lib (exit 0) else (exit 1)  # [win]
-    - if exist %LIBRARY_LIB%\\cmake\\TileDB\\TileDBConfig.cmake (exit 0) else (exit 1)  # [win]
-    - if exist %LIBRARY_BIN%\\tiledb.dll (exit 0) else (exit 1)  # [win]
+    - if not exist %LIBRARY_INC%\\tiledb\\tiledb exit 1  # [win]
+    - if not exist %LIBRARY_INC%\\tiledb\\tiledb.h exit 1  # [win]
+    - if not exist %LIBRARY_LIB%\\tiledb.lib exit 1  # [win]
+    - if not exist %LIBRARY_LIB%\\cmake\\TileDB\\TileDBConfig.cmake exit 1  # [win]
+    - if not exist %LIBRARY_BIN%\\tiledb.dll exit 1  # [win]
 
     # libcurl must be installed at runtime
     - test -e $PREFIX/lib/libcurl$SHLIB_EXT  # [not win]
-    - if exist %LIBRARY_LIB%\\libcurl.lib (exit 0) else (exit 1)  # [win]
-    - if exist %LIBRARY_BIN%\\libcurl.dll (exit 0) else (exit 1)  # [win]
+    - if not exist %LIBRARY_LIB%\\libcurl.lib exit 1  # [win]
+    - if not exist %LIBRARY_BIN%\\libcurl.dll exit 1  # [win]
 
 about:
   home: http://tiledb.io

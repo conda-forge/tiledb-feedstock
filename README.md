@@ -23,7 +23,14 @@ Current build status
 ====================
 
 
-<table>
+<table><tr>
+    <td>GitHub Actions</td>
+    <td>
+      <a href="https://github.com/conda-forge/tiledb-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/tiledb-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
+      </a>
+    </td>
+  </tr>
     
   <tr>
     <td>Azure</td>
@@ -245,10 +252,7 @@ Feedstock Maintainers
 =====================
 
 * [@akrherz](https://github.com/akrherz/)
-* [@ihnorton](https://github.com/ihnorton/)
 * [@jdblischak](https://github.com/jdblischak/)
-* [@nguyenv](https://github.com/nguyenv/)
-* [@shelnutt2](https://github.com/shelnutt2/)
 * [@teo-tsirpanis](https://github.com/teo-tsirpanis/)
 * [@xylar](https://github.com/xylar/)
 

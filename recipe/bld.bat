@@ -1,4 +1,6 @@
 setlocal EnableDelayedExpansion
+set "VCPKG_TARGET_TRIPLET=x64-windows"
+if "%target_platform%"=="win-arm64" set "VCPKG_TARGET_TRIPLET=arm64-windows"
 
 REM Copy tiledb-patches to the source directory
 xcopy /Y /S /I "%RECIPE_DIR%\tiledb-patches" "%SRC_DIR%"
@@ -27,7 +29,7 @@ cmake -G Ninja ^
       -DTILEDB_SKIP_S3AWSSDK_DIR_LENGTH_CHECK=ON ^
       -DTILEDB_SERIALIZATION=ON ^
       -DCMAKE_PREFIX_PATH="%LIBRARY_PREFIX%" ^
-      -DVCPKG_TARGET_TRIPLET=x64-windows ^
+      -DVCPKG_TARGET_TRIPLET=%VCPKG_TARGET_TRIPLET% ^
       ..
 if errorlevel 1 exit 1
 
