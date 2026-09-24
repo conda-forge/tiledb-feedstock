@@ -245,10 +245,7 @@ Feedstock Maintainers
 =====================
 
 * [@akrherz](https://github.com/akrherz/)
-* [@ihnorton](https://github.com/ihnorton/)
 * [@jdblischak](https://github.com/jdblischak/)
-* [@nguyenv](https://github.com/nguyenv/)
-* [@shelnutt2](https://github.com/shelnutt2/)
 * [@teo-tsirpanis](https://github.com/teo-tsirpanis/)
 * [@xylar](https://github.com/xylar/)
 
