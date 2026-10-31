@@ -37,7 +37,7 @@ cxx_compiler_version:
 fmt:
 - '12.1'
 libabseil:
-- '20260526'
+- '20260817'
 libcurl:
 - '8'
 libgoogle_cloud_devel:
