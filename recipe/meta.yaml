@@ -10,7 +10,7 @@ source:
   sha256: 36381f9eaa2a6defc8990aa1a95d1f0e87971748a50bf6fb705bf032ac7384cf
 
 build:
-  number: 29
+  number: 30
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=tiledb
     - {{ pin_subpackage('tiledb', max_pin='x.x') }}
@@ -32,6 +32,17 @@ requirements:
     # Header-only library.
     - nlohmann_json
   host:
+    - aws-c-auth  # [linux64]
+    - aws-c-cal  # [linux64]
+    - aws-c-common
+    - aws-c-compression  # [linux64]
+    - aws-c-event-stream  # [linux64]
+    - aws-c-http  # [linux64]
+    - aws-c-io  # [linux64]
+    - aws-c-mqtt  # [linux64]
+    - aws-c-s3  # [linux64]
+    - aws-c-sdkutils  # [linux64]
+    - aws-checksums  # [linux64]
     - aws-sdk-cpp
     - aws-crt-cpp
     - azure-core-cpp
