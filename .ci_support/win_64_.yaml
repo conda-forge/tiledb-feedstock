@@ -41,7 +41,7 @@ libgoogle_cloud_storage_devel:
 libwebp_base:
 - '1'
 lz4_c:
-- '1.10'
+- '1.11'
 openssl:
 - '3.5'
 spdlog:
