@@ -1,5 +1,7 @@
 DOCKER_PLATFORM:
 - linux/amd64
+aws_c_common:
+- '1.0'
 aws_crt_cpp:
 - 0.43.8
 aws_sdk_cpp:
