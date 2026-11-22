@@ -19,7 +19,7 @@ azure_storage_files_datalake_cpp:
 bzip2:
 - '1'
 c_blosc2:
-- '3.6'
+- '3.7'
 c_stdlib:
 - macosx_deployment_target
 c_stdlib_version:
@@ -43,9 +43,9 @@ libabseil:
 libcurl:
 - '8'
 libgoogle_cloud_devel:
-- '3.12'
+- '3.14'
 libgoogle_cloud_storage_devel:
-- '3.12'
+- '3.14'
 libwebp_base:
 - '1'
 lz4_c:
