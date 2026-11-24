@@ -74,6 +74,8 @@ lz4_c:
 - '1.11'
 openssl:
 - '3.5'
+s2n:
+- 1.7.7
 spdlog:
 - '1.17'
 target_platform:
