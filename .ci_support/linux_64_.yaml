@@ -11,21 +11,21 @@ aws_c_compression:
 aws_c_event_stream:
 - '1.0'
 aws_c_http:
-- '1.0'
+- '1.2'
 aws_c_io:
-- '1.0'
+- '1.1'
 aws_c_mqtt:
 - '1.0'
 aws_c_s3:
-- '1.1'
+- '1.5'
 aws_c_sdkutils:
 - '1.0'
 aws_checksums:
-- '1.0'
+- 1.0.1
 aws_crt_cpp:
-- 0.43.8
+- 0.43.9
 aws_sdk_cpp:
-- 1.11.905
+- 1.11.931
 azure_core_cpp:
 - 1.16.4
 azure_identity_cpp:
@@ -39,7 +39,7 @@ azure_storage_files_datalake_cpp:
 bzip2:
 - '1'
 c_blosc2:
-- '3.6'
+- '3.7'
 c_stdlib:
 - sysroot
 c_stdlib_version:
@@ -65,9 +65,9 @@ libabseil:
 libcurl:
 - '8'
 libgoogle_cloud_devel:
-- '3.12'
+- '3.14'
 libgoogle_cloud_storage_devel:
-- '3.12'
+- '3.14'
 libwebp_base:
 - '1'
 lz4_c:
