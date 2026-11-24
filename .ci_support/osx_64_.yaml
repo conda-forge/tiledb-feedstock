@@ -3,9 +3,9 @@ MACOSX_SDK_VERSION:
 aws_c_common:
 - '1.0'
 aws_crt_cpp:
-- 0.43.8
+- 0.43.9
 aws_sdk_cpp:
-- 1.11.905
+- 1.11.931
 azure_core_cpp:
 - 1.16.4
 azure_identity_cpp:
@@ -19,7 +19,7 @@ azure_storage_files_datalake_cpp:
 bzip2:
 - '1'
 c_blosc2:
-- '3.6'
+- '3.8'
 c_stdlib:
 - macosx_deployment_target
 c_stdlib_version:
@@ -35,7 +35,7 @@ curl:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '21'
+- '22'
 fmt:
 - '12.1'
 libabseil:
@@ -43,9 +43,9 @@ libabseil:
 libcurl:
 - '8'
 libgoogle_cloud_devel:
-- '3.12'
+- '3.14'
 libgoogle_cloud_storage_devel:
-- '3.12'
+- '3.14'
 libwebp_base:
 - '1'
 lz4_c:
